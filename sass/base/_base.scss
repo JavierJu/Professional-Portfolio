@@ -1,0 +1,38 @@
+@use "abstract/variables";
+
+// GLOBAL RESET //
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px as font-size. 10px/16px = 62.5%. 1rem = 10px //
+}
+
+body {
+  box-sizing: border-box; // It's better practice to put box-sizing: border-box here and to delcare it as inherit under *. It's more maintainable //
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+}
+
+::selection {
+  background-color: variables.$navy-2;
+  color: variables.$gold-2;
+}
+
+// SVG Icons //
+svg use {
+  fill: variables.$navy-2;
+}
+
+svg:active use,
+svg:hover use,
+svg:focus use {
+  fill: variables.$gold-3;
+}

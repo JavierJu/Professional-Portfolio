@@ -1,0 +1,34 @@
+@use "abstract/variables";
+@use "abstract/mixins";
+
+.btn {
+  justify-self: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+
+  &--card {
+    @include mixins.btn-styling;
+    padding: 1rem 6.4rem;
+
+    &:link {
+
+      @media only screen and (max-width: variables.$bp-tablet) {
+        padding: 1rem 30%;
+      }
+
+      @media only screen and (max-width: variables.$bp-mobile-l) {
+        padding: 1rem 25%;
+      }
+    }
+  }
+
+  &--slideToggle {
+    grid-column: 1 / -1;
+    display: flex;
+
+    @include mixins.btn-styling;
+    padding: 2rem 8rem;
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,14 @@
+@use "abstract/mixins";
+
+.blog-body {
+  @include mixins.blog-and-project-formatting;
+
+  &__focus-container {
+    gap: 2.4rem 0;
+  }
+
+  &__image {
+    width: 75%;
+    height: 75%;
+  }
+}

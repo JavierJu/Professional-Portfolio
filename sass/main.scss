@@ -1,0 +1,22 @@
+// IMPORTING PARTIAL FILES //
+@use "abstract/functions";
+@use "abstract/mixins";
+@use "abstract/variables";
+
+@use "base/animations";
+@use "base/base";
+@use "base/typography";
+
+@use "components/adobexd";
+@use "components/curriculum-box";
+@use "components/card";
+@use "components/button";
+@use "components/skills-box";
+
+@use "layout/header";
+@use "layout/footer";
+
+@use "pages/loader";
+@use "pages/home";
+@use "pages/projects";
+@use "pages/blog";

@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "name": "project_portfolio",
+  "description": "Portfolio of Jacob Grisham's web development projects and blog.",
+  "keywords": [
+    "Jacob",
+    "Grisham",
+    "software",
+    "engineer",
+    "portfolio"
+  ],
+  "author": "Jacob Grisham",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JacobGrisham/Professional-Portfolio.git"
+  },
+  "private": true,
+  "homepage": "https://jacobgrisham.com",
+  "scripts": {
+    "watch:sass": "sass --watch sass/main.scss:css/style.css --load-path=sass",
+    "compile:sass": "ass sass/main.scss css/style.compile.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.compile.css -o css/style.prefix.css",
+    "compress:css": "sass css/style.prefix.css css/style.css --output-style compressed",
+    "dev": "npm-run-all --parallel watch:sass",
+    "build": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0",
+    "trim-newlines": "^4.0.2"
+  },
+  "dependencies": {
+    "lax.js": "^2.0.3",
+    "sass": "^1.83.4"
+  }
+}

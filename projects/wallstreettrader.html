@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-cast-api-enabled="true">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Wall Street Trader Project Walkthrough</title>
+    <meta name="title" content="Wall Street Trader Project Walkthrough">
+    <meta name="author" content="Jacob Grisham">
+    <meta name="keywords" content="Jacob,Grisham,Jacob Grisham,Wall Street Trader">
+    <meta name="description" content="Walkthrough of my project Wall Street Trader. Wall Street Trader is a monolithic MVC full-stack web app built with Pthyon, Flask, Jinja, Bootstrap, and hosted on Amazon Web Services (AWS) EC2 with Ubuntu, Gunicorn, and Nginx. The main features include the ability to manage a fake portfolio of stocks, allowing you 'buy' and 'sell' against real stocks’ actual prices (using fake money). This is just a demo website, no real transactions occur.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jacobgrisham.com/">
+    <meta property="og:title" content="Wall Street Trader Project Walkthrough">
+    <meta property="og:site_name" content="Jacob Grisham Professional Portfolio">
+    <meta property="og:image" content="https://www.jacobgrisham.com/img/thumbnail.png">
+    <meta property="og:image:secure_url" content="https://www.jacobgrisham.com/img/thumbnail.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:alt" content="Wall Street Trader">
+    <meta property="og:description" content="Walkthrough of my project Wall Street Trader. Wall Street Trader is a monolithic MVC full-stack web app built with Pthyon, Flask, Jinja, Bootstrap, and hosted on Amazon Web Services (AWS) EC2 with Ubuntu, Gunicorn, and Nginx. The main features include the ability to manage a fake portfolio of stocks, allowing you 'buy' and 'sell' against real stocks’ actual prices (using fake money). This is just a demo website, no real transactions occur." name="description">
+    <meta property="fb:app_id" content="2733409333567092">
+
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.jacobgrisham.com/">
+    <meta property="twitter:title" content="Wall Street Trader Project Walkthrough">
+    <meta property="twitter:description" content="Walkthrough of my project Wall Street Trader. Wall Street Trader is a monolithic MVC full-stack web app built with Pthyon, Flask, Jinja, Bootstrap, and hosted on Amazon Web Services (AWS) EC2 with Ubuntu, Gunicorn, and Nginx. The main features include the ability to manage a fake portfolio of stocks, allowing you 'buy' and 'sell' against real stocks’ actual prices (using fake money). This is just a demo website, no real transactions occur.">
+    <meta property="twitter:image" content="https://www.jacobgrisham.com/img/thumbnail.png">
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.jacobgrisham.com/pages/projects/wallstreettrader.html">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?&family=Montserrat:wght@100;200;300&family=Nunito+Sans:wght@200;300;400&family=PT+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Include this second link for production -->
+    <link rel="text/css" href="../css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    </head>
+  <body class="projects-body">
+    <!-- Loader -->
+    <div class="laptop loader">
+      <svg class="laptop__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.375 79.375" height="300" width="300">
+        <g transform="translate(-2.22 3.222)">
+          <g transform="translate(-335.788 -22.347) scale(.39771)">
+            <rect fill="#b3b3b3" width="137.583" height="89.958" x="880.884" y="99.204" ry="2.022"/>
+            <rect y="100.527" x="882.207" height="87.313" width="134.938" ry="2.134" rx="0"/>
+            <path d="M886.175 104.496h127v79.375h-127z" fill="#4d4d4d"/>
+            <rect fill="#333" width="29.788" height="70.68" x="891.36" y="113.22" ry="0" rx="0"/>
+          </g>
+          <path d="M16.674 20.813h50.597v.317H16.674zM30.53 24.5h36.617v15.488H30.529zm0-1.555h9.184V24.5H30.53z" fill="#1a1a1a"/>
+          <path d="M30.53 22.69h9.183v.255H30.53z" fill="#003380"/>
+          <rect fill="#2c5aa0" width="6.399" height=".455" x="32.113" y="23.546" ry=".227"/>
+          <path d="M30.534 41.82h36.645v8.972H30.534zm-.005-1.557h9.184v1.555H30.53z" fill="#1a1a1a"/>
+          <path d="M30.53 40.007h9.183v.256H30.53z" fill="#003380"/>
+          <rect fill="#2c5aa0" ry=".227" y="40.793" x="32.089" height=".455" width="6.399"/>
+          <g transform="translate(-19.725 -1.116) scale(.39771)" fill="#ccc">
+            <rect ry=".767" y="62.346" x="99.493" height="1.535" width="14.902"/>
+            <rect width="14.902" height="1.535" x="103.298" y="65.818" ry=".767"/>
+            <rect width="16.379" height="1.535" x="106.895" y="69.291" ry=".767"/>
+            <rect width="11.497" height="1.535" x="106.959" y="72.763" ry=".767"/>
+            <rect ry=".767" y="76.235" x="107.055" height="1.535" width="11.497"/>
+            <rect ry=".767" y="79.707" x="106.927" height="1.535" width="11.497"/>
+            <rect ry=".767" y="83.179" x="102.833" height="1.535" width="16.379"/>
+            <rect ry=".767" y="86.651" x="102.746" height="1.535" width="13.001"/>
+            <rect ry=".767" y="90.123" x="106.991" height="1.535" width="16.379"/>
+            <rect ry=".767" y="93.595" x="107.338" height="1.535" width="9.882"/>
+            <rect ry=".767" y="97.067" x="100.024" height="1.535" width="16.379"/>
+            <rect ry=".767" y="100.539" x="100.196" height="1.535" width="12.74"/>
+            <rect ry=".767" y="104.011" x="100.379" height="1.535" width="12.44"/>
+          </g>
+          <g transform="translate(-411.355 -23.965) scale(.39771)">
+            <rect fill="#ccc" ry=".887" y="193.745" x="1056.522" height="4.151" width="166.317"/>
+            <path fill="#999" d="M1222.19 197.896h-165.048l4.029 2.723h156.468z"/>
+          </g>
+          <rect fill="#b3b3b3" ry=".4" y="53.067" x="38.233" height=".801" width="7.35"/>
+          <rect fill="#999" ry=".4" y="43.091" x="31.651" height=".801" width="10.779"/>
+          <rect fill="#999" width="10.779" height=".801" x="31.651" y="45.052" ry=".4"/>
+          <rect fill="#999" width="10.779" height=".801" x="31.651" y="47.013" ry=".4"/>
+          <rect fill="#999" width="10.779" height=".801" x="31.651" y="48.975" ry=".4"/>
+          <rect fill="#999" ry=".051" y="49.718" x="43.875" height=".103" width="1.511"/>
+          <rect fill="#999" width="5.07" height=".801" x="43.661" y="43.181" ry=".4"/>
+          <rect fill="#999" width="13.784" height=".801" x="43.683" y="45.152" ry=".4"/>
+          <rect fill="#999" width="10.779" height=".801" x="43.703" y="46.958" ry=".4"/>
+          <rect fill="#c83737" width="4.572" height=".61" x="31.725" y="25.832" ry=".305"/>
+          <rect fill="#fd5" width="8.157" height=".61" x="37.883" y="25.823" ry=".305"/>
+          <rect fill="#fd5" ry=".305" y="27.46" x="37.922" height=".61" width="10.535"/>
+          <rect fill="#fd5" ry=".305" y="29.214" x="37.922" height=".61" width="6.053"/>
+          <rect fill="#999" width="10.779" height=".801" x="31.751" y="30.95" ry=".4"/>
+          <rect fill="#ccc" ry=".325" y="32.771" x="31.771" height=".649" width="3.93"/>
+          <rect fill="#c83737" ry=".305" y="32.771" x="36.627" height=".61" width="4.572"/>
+          <rect fill="#5fbcd3" width="6.053" height=".61" x="42.045" y="32.731" ry=".305"/>
+          <rect fill="#ccc" width="3.93" height=".649" x="48.951" y="32.672" ry=".325"/>
+          <rect class="code" id="code-8" fill="#fd5" width="6.053" height=".61" x="35.771" y="34.449" ry=".305" />
+          <rect class="code" id="code-7" fill="#5fbcd3" ry=".305" y="34.5" x="42.27" height=".61" width="9.509" />
+          <rect class="code" id="code-6" fill="#ccc" ry=".325" y="36.08" x="38.948" height=".649" width="3.93" />
+          <rect class="code" id="code-5" fill="#37c871" ry=".325" y="36.08" x="44.106" height=".649" width="2.847" />
+          <rect class="code" id="code-4" fill="#37c871" ry=".325" y="36.131" x="47.923" height=".649" width="2.692" />
+          <rect class="code" id="code-3" fill="#5fbcd3" ry=".325" y="36.131" x="51.585" height=".649" width="6.097" />
+          <rect class="code" id="code-2" fill="#ccc" width="3.93" height=".649" x="35.904" y="37.834" ry=".325" />
+          <rect class="code" id="code-1" fill="#c83737" width="7.203" height=".61" x="41.102" y="37.905" ry=".305" />
+        </g>
+      </svg>
+    </div>
+
+    <div class="projects-body__focus-container">
+      <!-- HEADER -->
+      <section>
+        <h1 class="projects-body__main-heading">Wall Street Trader Project Walkthrough</h1>
+        <h2 class="blog-body__sub-heading">September - November 2020</h2>
+    
+        <h2 class="projects-body__heading">Source Code
+          <span>
+            <a href="https://github.com/JacobGrisham/Finance-Full-Stack-Web-App-using-Flask-and-SQL" aria-label="link to Wall Street Trader source code" target="_blank" rel="noopener noreferrer">
+              <svg class="skills-box__header-icon">
+                <use xlink:href="../img/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+          </span>
+        </h2>
+
+        <div>
+          <img src="../img/Wall-Street-TraderMetaImage-min.png" class="projects-body__image lax"></img>
+        </div>
+      </section>
+  
+      <!-- ABOUT -->
+      <section>
+        <h2 class="projects-body__heading">About</h2>
+        <p>Homework from <a href="https://www.edx.org/course/cs50s-introduction-to-computer-science" class="curriculum__link">Harvard's Introduction to Computer Science CS50 hosted on eDX</a> <a href="https://cs50.harvard.edu/x/2020/tracks/web/" class="curriculum__link">Web Track</a>: <a href="https://cs50.harvard.edu/x/2020/tracks/web/finance/" class="curriculum__link">Finance</a>. Web application via which you can manage portfolios of stocks. This tool allows you to check real stocks’ actual prices and portfolios’ values, it will also let you buy (okay, “buy”) and sell (okay, “sell”) stocks by querying <a href="https://iexcloud.io/docs/api/#quote" class="curriculum__link">IEX Stock Quote API</a> for stocks’ prices. I wrote all the code in the templates directory. I wrote most of the code in application.py. Some of the code in helpers.py was provided by instructor. I styled the application myself, with illustrations provided by <a href="http://www.freepik.com/" class="curriculum__link">Freepik</a>. The core of the application was built from September - November 2020, with sporadic updates up until April 2022.</p>
+      </section>
+  
+      <!-- PRODUCT FEATURES AND SPECIFICATIONS -->
+      <section>
+        <h2 class="projects-body__heading">Product Features and Specifications</h2>
+        <ul class="projects-body__list">
+          <li>Login, sign-up</li>
+          <li>Security to prevent certain transactions using error codes 400-404</li>
+          <li>Create, Read, and Update for stocks</li>
+        </ul>
+      </section>
+  
+      <!-- TECHONOLOGIES -->
+      <section class="technologies">
+        <h2 class="projects-body__heading technologies__header">Technologies</h2>
+        <div class="skills-box__no-shadow">
+          <h4 class="skills-box__header">
+            <svg class="skills-box__header-icon">
+              <use xlink:href="../img/sprite.svg#icon-embed2"></use>
+            </svg>
+            Front-End
+          </h4>
+          <ul class="skills-box__list">
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-jinja"></use>
+              </svg>
+              Jinja
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-html5"></use>
+              </svg>
+              HTML5
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-bootstrap"></use>
+              </svg>
+              Boostrap
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-css3"></use>
+              </svg>
+              CSS3
+            </li>
+          </ul>
+        </div>
+    
+        <!-- BACK-END -->
+        <div class="skills-box__no-shadow">
+          <h4 class="skills-box__header">
+            <svg class="skills-box__header-icon">
+              <use xlink:href="../img/sprite.svg#icon-terminal"></use>
+            </svg>
+            Back-End
+          </h4>
+          <ul class="skills-box__list">
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-python"></use>
+              </svg>
+              Python
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-flask"></use>
+              </svg>
+              Flask
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-flask"></use>
+              </svg>
+              Flask SQL Alchemy
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Testing -->
+        <div class="skills-box__no-shadow">
+          <h4 class="skills-box__header">
+            <svg class="skills-box__header-icon">
+              <use xlink:href="../img/sprite.svg#icon-lab"></use>
+            </svg>
+            Testing
+          </h4>
+          <ul class="skills-box__list">
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-pytest"></use>
+              </svg>
+              Pytest
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-lighthouse"></use>
+              </svg>
+              Google Lighthouse
+            </li>
+          </ul>
+        </div>
+    
+        <!-- DATABASE -->
+        <div class="skills-box__no-shadow">
+          <h4 class="skills-box__header">
+            <svg class="skills-box__header-icon">
+              <use xlink:href="../img/sprite.svg#icon-database"></use>
+            </svg>
+            Database
+          </h4>
+          <ul class="skills-box__list">
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-mysql"></use>
+              </svg>
+              MySQL
+            </li>
+          </ul>
+        </div>
+
+        <!-- DEVELOPMENT -->
+        <div class="skills-box__no-shadow">
+          <h4 class="skills-box__header">
+            <svg class="skills-box__header-icon">
+              <use xlink:href="../img/sprite.svg#icon-cogs"></use>
+            </svg>
+            Development
+          </h4>
+          <ul class="skills-box__list">
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-git"></use>
+              </svg>
+              Git
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-github"></use>
+              </svg>
+              GitHub
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-codacy"></use>
+              </svg>
+              Codacy
+            </li>
+          </ul>
+        </div>
+    
+        <!-- PRODUCTION -->
+        <div class="skills-box__no-shadow">
+          <h4 class="skills-box__header">
+            <svg class="skills-box__header-icon">
+              <use xlink:href="../img/sprite.svg#icon-cloud-upload"></use>
+            </svg>
+            Production
+          </h4>
+          <ul class="skills-box__list">
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-amazonaws"></use>
+              </svg>
+              AWS EC2
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-ubuntu"></use>
+              </svg>
+              Ubuntu
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-gunicorn"></use>
+              </svg>
+              Gunicorn
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-nginx"></use>
+              </svg>
+              Nginx
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-travisci"></use>
+              </svg>
+              TravisCI
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-google-domains"></use>
+              </svg>
+              Google Domains
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../img/sprite.svg#icon-google-analytics"></use>
+              </svg>
+              Google Analytics
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- UX/UI MOCKS AND GRAPHIC DESIGN -->
+      <section>
+        <h2 class="projects-body__heading">UX/UI Mocks and Graphic Design</h2>
+        <p class="projects-body__paragraph-spacing-below">Heavily relied on open-source assests to make use of the high quality material created or curated by the open-source community. For the full list, please refer to the <a href="https://github.com/JacobGrisham/Finance-Full-Stack-Web-App-using-Flask-and-SQL#-attribution" target="_blank" rel="noopener noreferrer">attribute section of this GitHub repo</a>.</p>
+      </section>
+
+      <!-- DESIGN AND ARCHITECTURE -->
+      <section>
+        <h2 class="projects-body__heading">Design and Architecture</h2>
+        <h3>Code Architecture</h3>
+        <p class="projects-body__paragraph-spacing-below">Used a Model-View-Controller (MVC) Monolithic Architecture since it's the most simple architecture to gain an introduction to full-stack web development. Building a MVC Monolith allows one to gain a perspective on the range of achitectures, particularly the lower-end of the range. The Monolith Architecture falls short in scalability and separation of front-end and back-end. The MVC Architecture falls short when the application begins to grow in complexity with the addition of services that could stand on thier own. The MVC Architecture is perhaps best used for simple proof-of-concept projects, like this one. However, for any projects that serve real business needs, I would opt to use an event-driven serverless architecture.</p>
+
+        <div>
+          <img src="../img/Wall-Street-Trader-Code-Architecture.drawio.svg" alt="Wall Street Trader Code Architecture Diagram" class="projects-body__image projects-body__paragraph-spacing-below lax"></img>
+        </div>
+
+        <p class="projects-body__paragraph-spacing-below"><span class="projects-body__bold-text">Model</span>: </p>
+
+        <p class="projects-body__paragraph-spacing-below"><span class="projects-body__bold-text">View</span>: Chose Jinja as the front-end templating language for more DRY code compared to plain HTML and for dynamic user-experiences. This is a simple templating language, similar to express for Node.js. Both however fall short on front-end scalability, modularity, and performance compared to a framework like React. Working with simple templating languges helps to remind me the benefits of working with a framework like React. Chose Bootstrap 5 as the CSS framework to keep the UI simple and quick to build. Since the website takes a performance hit for loading Bootstrap, took full advantage of advanced Bootstrap features such as custom validation for all forms and animated form input for the login and register pages.</p>
+
+        <p class="projects-body__paragraph-spacing-below"><span class="projects-body__bold-text">Controller</span>: Chose Python as the backend programming language for its rich ecosystem and community support. For example,leveraged Werkzeug for the authentication and authorization since it's a common out-of-the-box solution. Chose Flask as the Python application framework since it's a lightweight framework, which is ideal for gaining an understanding of how to build the backend from scratch. Compared to a framework like Django, Flask doesn't have many as features out of the box.</p>
+
+        <h3>Database Schema</h3>
+        <div>
+          <img src="../img/Wall-Street-Trader-Database-Schema.drawio.svg" alt="Wall Street Trader Database Schema" class="projects-body__image projects-body__paragraph-spacing-below lax"></img>
+        </div>
+
+        <h3>Tests</h3>
+        <p class="projects-body__paragraph-spacing-below"></p>
+
+        <h3>Production System Architecture</h3>
+        <p class="projects-body__paragraph-spacing-below">I used Ubuntu as the OS on EC2 since it's the most popular operating system for web servers, Gunicorn as the WSGI since it's fast, and Nginx as the reverse proxy since it was made with this optimization in mind.</p>
+
+        <div>
+          <img src="../img/Wall-Street-Trader-EC2-Server-Architecture.drawio.svg" alt="Wall Street Trader EC2 Server Architecture" class="projects-body__image projects-body__paragraph-spacing-below lax"></img>
+        </div>
+
+        <p class="projects-body__paragraph-spacing-below">Initially hosted application on <a href="https://aws.amazon.com/elasticbeanstalk/" class="curriculum__link" target="_blank" rel="noopener noreferrer">AWS Elastic Beanstalk</a> for a gradual introduction to AWS. Prior to this, I had only used Heroku to host full-stack web applications, so I chose a similar Infrastructure as a Service (IaaS) offered by AWS. After numerous Elastic Beanstalk policy changes and disconnections, I decided to go to the next level down in AWS, which is hosting this application on an EC2 instance. This offered a lot of experience and opportunities for learning about web servers.</p>
+        <p class="projects-body__paragraph-spacing-below">Initially stored user sessions in a <code>tmp</code> folder with <a href="https://docs.python.org/3/library/tempfile.html" class="curriculum__link" target="_blank" rel="noopener noreferrer">mkdtemp</a>, however Nginx had trouble accessing it in production. Therefore refactored application to store user sessions in a Redis database and hosted the Redis database on <a href="https://aws.amazon.com/elasticache/" class="curriculum__link" target="_blank" rel="noopener noreferrer">AWS Elasticache</a></p>
+
+        <div>
+          <img src="../img/Wall-Street-Trader-Production-Architecture.drawio.svg" alt="Wall Street Trader Production System Architecture Diagram" class="projects-body__image projects-body__paragraph-spacing-below lax"></img>
+        </div>
+
+        <h3>Production Scalability and Load limitations</h3>
+        <p>The production server is hosted on an AWS EC2 server on the t2.small tier, which has a limit of 1 vCPU and 2 GB of RAM. If I needed to scale up due to an overloaded server, I could scale horizontally and add an elastic load balancer or I have the option to scale vertically by upgrading the server to the next tier, t2.medium, which would double the vCPU and RAM.</p>
+      </section>
+
+      <!-- PRODUCTION METRICS -->
+      <section>
+        <h2>Production System Cost</h2>
+        <ul class="projects-body__list">
+          <li>AWS EC2 t2.small on-demand: $13.99/month</li>
+          <li>Google Domain for wallstreettrader.app: $14/year</li>
+          <li>[REMOVED] AWS RDS: $19.19/month</li>
+          <li>[REMOVED] AWS Elasticache: $16.37/month</li>
+          <li>GitHub Free Tier: free</li>
+        </ul>
+        <h2 class="projects-body__heading">Production Metrics</h2>
+        <ul class="projects-body__list">
+          <li><span class="projects-body__bold-text">Traffic</span>: 250+ total website visits since launch</li>
+          <li><span class="projects-body__bold-text">Search Engine Optimization (SEO)</span>: </li>
+          <li><span class="projects-body__bold-text">Site Reliability</span>: </li>
+          <li><span class="projects-body__bold-text">Security</span>: Mozzila Observatory</li>
+          <li><span class="projects-body__bold-text">Performance</span>: from Google Lighthouse</li>
+          <li><span class="projects-body__bold-text">Accessibility</span>: from Google Lighthouse</li>
+          <li><span class="projects-body__bold-text">Cross-Browser Compatibility</span>: from LambdaTest</li>
+        </ul>
+      </section>
+
+      <!-- LESSONS LEARNED -->
+      <section>
+        <h2 class="projects-body__heading">Lessons Learned</h2>
+        <ul class="projects-body__list">
+          <li>During Homework Assingment</li>
+          <ul class="projects-body__list">
+            <li>Database design and Create, Read, Update in SQL</li>
+            <li><a href="https://jinja.palletsprojects.com/en/2.11.x/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Jinja</a> templating</li>
+            <li>Password hashing using <a href="https://werkzeug.palletsprojects.com/en/1.0.x/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Werkzeug</a></li>
+            <li>Using <a href="https://flask.palletsprojects.com/en/1.1.x/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Flask</a> as a server-side micro-framework for the first time</li>
+            <li>Parsing data from API with python</li>
+            <li>Parsing data from SQL queries with python</li>
+            <li>Calculations using data from API and database</li>
+          </ul>
+          <li>Rewriting for First Version of Production System</li>
+          <ul class="projects-body__list">
+            <li>Rewrote the entire application to use <a href="https://flask-sqlalchemy.palletsprojects.com/en/2.x/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Flask SQL Alchemy</a>, an extension of <a href="https://www.sqlalchemy.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">SQL Alchemy</a></li>
+            <li>Developed MVP of application with <a href="https://www.sqlite.org/index.html" class="curriculum__link" target="_blank" rel="noopener noreferrer">SQLite</a> locally and deployed with <a href="https://www.mysql.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">MySQL</a></li>
+            <li>Python Class/Models and Schemas</li>
+          </ul>
+          <li>Refactoring for Second Version of Production System</li>
+          <ul class="projects-body__list">
+            <li>Hosting application on AWS with an <a href="https://aws.amazon.com/elasticbeanstalk/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Elastic Beanstalk</a> instance</li>
+            <li>Hosting MySQL database on AWS with a <a href="https://aws.amazon.com/rds/" class="curriculum__link" target="_blank" rel="noopener noreferrer">RDS</a> instance</li>
+            <li>Hosting Redis cache on AWS with an <a href="https://aws.amazon.com/elasticache/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Elasticache</a> instance</li>
+          </ul>
+          <li>Refactoring for Third Version of Production System</li>
+          <ul class="projects-body__list">
+            <li>Hosting application on AWS with an <a href="https://aws.amazon.com/ec2/" class="curriculum__link" target="_blank" rel="noopener noreferrer">EC2</a> instance with an <a href="(https://ubuntu.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Ubuntu</a> operating system, <a href="https://gunicorn.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Gunicorn</a> WSGI HTTP server, and <a href="https://www.nginx.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Nginx</a> front-end reverse proxy</li>
+            <li>Using <a href="(https://ubuntu.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Ubuntu</a> as an operating system for the first time</li>
+            <li><a href="https://gunicorn.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Gunicorn</a> configuration and error-logging</li>
+            <li><a href="https://www.nginx.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Nginx</a> configuration and server security/performance optimization</li>
+            <li>Error logging with <a href="https://sentry.io/welcome/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Sentry</a> for hosted application in production</li>
+          </ul>
+        </ul>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer__fun-note">Made with<svg class="footer__icon"><use xlink:href="../img/sprite.svg#icon-heart"></use></svg>in SF</p>
+      <p>Copyright &copy; <time id="date"></time> by Jacob Grisham</p>
+    </footer>
+
+  <!-- JAVASCRIPT -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SV51NLJS21"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+  </body>
+</html>

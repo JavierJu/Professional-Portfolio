@@ -1,0 +1,210 @@
+@use "abstract/variables";
+@use "abstract/mixins";
+
+#index {
+  display: grid;
+  grid-template-rows: [header-start] 100vh [header-end bio-start] minmax(min-content, max-content) [bio-end skills-start] minmax(min-content, max-content) [skills-end project-start] minmax(min-content, max-content) [project-end contact-start] minmax(min-content, max-content) [contact-end footer-start] max-content [footer-end];
+}
+
+// BIO SECTION //  
+.bio {
+  grid-row: bio-start / bio-end;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, min-content);
+  gap: 2rem 0;
+  justify-items: center;
+  padding: 4.8rem;
+  background-color: variables.$white-2;
+
+  @media only screen and (max-width: variables.$bp-tablet) {
+    padding: 3.2rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-mobile-l) {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  &__img {
+    grid-column: 1 / 2;
+    max-height: 25rem;
+    max-width: 25rem;
+    border-radius: 50%;
+    transform: translateX(3rem);
+
+    @media only screen and (max-width: variables.$bp-laptop) {
+      grid-column: 2 / 6;
+      transform: translateX(0);
+    }
+  }
+
+  &__content {
+    grid-column: 2 / 6;
+    background-color: variables.$grey-1;
+    padding: 5rem;
+
+    @media only screen and (max-width: variables.$bp-laptop) {
+      grid-column: 1 / -1;
+    }
+
+    &__paragraph:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+// CURRICULUM LIST DROPDOWN //
+.curriculum {
+  @include mixins.hide-content;
+  grid-column: 1 / -1;
+  grid-row: 5 / 6;
+  padding: 3.2rem;
+
+  @media only screen and (max-width: variables.$bp-tablet) {
+    padding: 1.6rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-mobile-l) {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  &__methodology {
+    background-color: variables.$navy-2;
+    color: variables.$grey-1;
+    padding: 1.6rem;
+    border-radius: 5px;
+  }
+}
+
+// SKILLS SECTION //
+.skills {
+  grid-row: skills-start / skills-end;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  gap: 2rem 1vw;
+  padding: 4.8rem;
+  background-color: variables.$grey-2;
+
+  @media only screen and (max-width: variables.$bp-laptop) {
+    grid-template-columns: min-content;
+    grid-template-rows: min-content repeat(4, 1fr);
+    justify-content: center;
+    gap: 2rem 0;
+  }
+
+  @media only screen and (max-width: variables.$bp-tablet) {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 3.2rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-mobile-l) {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+}
+
+// PROJECT SECTION //
+.projects {
+  grid-row: project-start / project-end;
+  display: grid;
+  gap: 3rem 0;
+  padding: 4.8rem;
+  justify-items: center;
+  background-color: variables.$grey-1;
+
+  @media only screen and (max-width: variables.$bp-4K) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 5rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-laptop-l) {
+    grid-template-columns: 1fr;
+  }
+
+  @media only screen and (max-width: variables.$bp-tablet) {
+    padding: 3.2rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-mobile-l) {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  &__extras {
+    @include mixins.hide-content;
+    gap: 2rem 1vw;
+    padding: 4.8rem;
+
+    @media only screen and (max-width: variables.$bp-laptop) {
+      gap: 2rem 0;
+    }
+
+    @media only screen and (max-width: variables.$bp-tablet) {
+      padding: 3.2rem;
+    }
+
+    @media only screen and (max-width: variables.$bp-mobile-l) {
+      padding-top: 2.4rem;
+      padding-bottom: 2.4rem;
+    }
+  }
+}
+
+// CONTACT SECTION //
+.contact {
+  grid-row: contact-start / contact-end;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, max-content) 1fr;
+  grid-template-rows: repeat(2, max-content);
+  gap: 1.6rem 1.6rem;
+  justify-items: center;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  background-color: variables.$grey-2;
+
+  @media only screen and (max-width: variables.$bp-tablet) {
+    grid-template-rows: repeat(3, max-content);
+    gap: 1.6rem 0;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-mobile-l) {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+}
+
+.online-profile {
+  grid-column: 2 / 3;
+  @include mixins.contact-formatting;
+
+  @media only screen and (max-width: variables.$bp-tablet) {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
+.email {
+  grid-column: 3 / 4;
+  @include mixins.contact-formatting;
+
+  @media only screen and (max-width: variables.$bp-tablet) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+.social-media {
+  grid-column: 4 / 5;
+  @include mixins.contact-formatting;
+
+  @media only screen and (max-width: variables.$bp-tablet) {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+}

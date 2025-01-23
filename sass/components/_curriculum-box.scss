@@ -1,0 +1,115 @@
+@use "abstract/variables";
+
+.curriculum {
+  // Associated code in _home.scss
+
+  &__methodology__link {
+
+    &:link,
+    &:visited {
+      text-decoration: underline;
+      color: variables.$grey-1;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: variables.$gold-2;
+    }
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media only screen and (max-width: variables.$bp-4K) {
+      padding: 1.6rem;
+      gap: 3.2rem;
+    }
+
+    @media only screen and (max-width: variables.$bp-laptop) {
+      padding: 0;
+      gap: 2.4rem;
+    }
+
+    @media only screen and (max-width: variables.$bp-tablet) {
+      padding: 0;
+      gap: 1.6rem;
+    }
+
+    &-completed {
+      grid-column: 1 / 2;
+
+      @media only screen and (max-width: variables.$bp-tablet) {
+        grid-column: 1 / -1;
+      }
+    }
+
+    &-progress {
+      grid-column: 2 / 3;
+
+      @media only screen and (max-width: variables.$bp-tablet) {
+        grid-column: 1 / -1;
+      }
+    }
+
+    &-queue {
+      grid-column: 3 / 4;
+
+      @media only screen and (max-width: variables.$bp-tablet) {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+
+
+  &__header {
+    text-align: center;
+    padding: 1.6rem;
+
+    &__icon {
+      vertical-align: middle;
+      height: 3.5rem;
+      width: 3.5rem;
+      margin-right: 5px;
+      fill: variables.$navy-2;
+    }
+  }
+
+  &__list {
+    border-radius: 5px;
+    background-color: variables.$grey-1;
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+
+  &__item {
+    padding: 1.2rem 0;
+  }
+
+  &__link {
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:link,
+    &:visited {
+      color: variables.$navy-2;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: variables.$gold-2;
+    }
+
+    &--no-decoration {
+      text-decoration: none;
+    }
+  }
+}
+
+#technologies {
+  display: none;
+  margin-left: 4rem;
+  margin-bottom: 1.6rem;
+}
