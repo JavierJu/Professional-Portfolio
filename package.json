@@ -1,26 +1,26 @@
 {
   "version": "2.0.0",
   "name": "project_portfolio",
-  "description": "Portfolio of Jacob Grisham's web development projects and blog.",
+  "description": "Portfolio of Javier Ju's web development projects and blog.",
   "keywords": [
-    "Jacob",
-    "Grisham",
+    "Javier",
+    "Ju",
     "software",
     "engineer",
     "portfolio"
   ],
-  "author": "Jacob Grisham",
+  "author": "Javier Ju",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JacobGrisham/Professional-Portfolio.git"
+    "url": "https://github.com/JavierJu/Professional-Portfolio"
   },
   "private": true,
-  "homepage": "https://jacobgrisham.com",
+  "homepage": "https://www.javierju.com",
   "scripts": {
     "start": "node server.js",
     "watch:sass": "sass --watch sass/main.scss:css/style.css --load-path=sass",
-    "compile:sass": "ass sass/main.scss css/style.compile.css",
+    "compile:sass": "sass sass/main.scss css/style.compile.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.compile.css -o css/style.prefix.css",
     "compress:css": "sass css/style.prefix.css css/style.css --output-style compressed",
     "dev": "npm-run-all --parallel watch:sass",
