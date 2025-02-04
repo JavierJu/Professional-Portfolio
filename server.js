@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const PORT = 80;
+const PORT = 3000;
 
 // 현재 디렉토리에서 정적 파일 제공
 app.use(express.static(__dirname));
