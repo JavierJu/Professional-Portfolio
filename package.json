@@ -18,6 +18,7 @@
   "private": true,
   "homepage": "https://jacobgrisham.com",
   "scripts": {
+    "start": "node server.js",
     "watch:sass": "sass --watch sass/main.scss:css/style.css --load-path=sass",
     "compile:sass": "ass sass/main.scss css/style.compile.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.compile.css -o css/style.prefix.css",
@@ -32,6 +33,7 @@
     "trim-newlines": "^4.0.2"
   },
   "dependencies": {
+    "express": "^4.21.2",
     "lax.js": "^2.0.3",
     "sass": "^1.83.4"
   }
