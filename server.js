@@ -4,6 +4,14 @@ const path = require("path");
 const app = express();
 const PORT = 80;
 
+// 리디렉션 설정
+app.use((req, res, next) => {
+    if (req.hostname === "javierju.com") {
+        return res.redirect(301, "https://www.javierju.com" + req.originalUrl);
+    }
+    next();
+});
+
 // 현재 디렉토리에서 정적 파일 제공
 app.use(express.static(__dirname));
 
