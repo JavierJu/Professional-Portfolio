@@ -43,3 +43,11 @@ CloudFront에서 캐싱 정책을 적절히 설정했는지 확인! (Cache-Contr
 3️⃣ CloudFront + S3 활용 가능성
 현재 Express에서 정적 파일을 서빙하고 있다면, S3에 올려서 CloudFront로 서빙하는 것도 성능 개선 가능.
 Express 서버 부하를 줄이고 더 빠른 응답을 받을 수 있음.
+
+
+Performance, Security, Accessibility, and SEO optimization with Lighthouse. Increased Google Lighthouse performance score from 12 to 88
+Decreased average DOM Content Loaded time from 10s to 2s using intersection observer and lazy loading for images and video. Further decreased first visit DOM Content Loaded time from 7s to 1s by refactoring website from using an express.js server to a static site with no web server
+Increased SEO to achieve Google PageRank #1 for the search term “jacob grisham”. Used Open Graph Meta Properties (og:image, etc.) to help increase ranking
+User Experience optimization with loading page SVG animation
+Increased cross-browser compatibility using LambdaTest
+First time using Google Analytics and first time routing website to a domain name
