@@ -30,3 +30,16 @@ $ npm run build
 
 ## 🔒 License
 Copyright Notice and Statement: currently [**not** offering any license](https://choosealicense.com/no-permission/). Permission only to view.
+
+
+
+추가 AWS 작업
+
+1️⃣ CloudFront 캐싱 최적화
+CloudFront에서 캐싱 정책을 적절히 설정했는지 확인! (Cache-Control 헤더 활용)
+정적 파일 (이미지, CSS, JS 등)은 max-age를 길게 설정해서 성능 최적화 가능.
+개발 중일 땐 CloudFront 캐시 무효화(Invalidations) 필요할 수도 있음.
+
+3️⃣ CloudFront + S3 활용 가능성
+현재 Express에서 정적 파일을 서빙하고 있다면, S3에 올려서 CloudFront로 서빙하는 것도 성능 개선 가능.
+Express 서버 부하를 줄이고 더 빠른 응답을 받을 수 있음.
