@@ -27,6 +27,7 @@ Copyright Notice and Statement: currently [**not** offering any license](https:/
 - public 폴더 생성 및 정적파일 이동 
  css, favicon_io, img, js, projects
  favicon.ico, index.html, robnots.txt, site.webmanifest, sitemap.xml, text.md
+- index.html, style.css 리팩터링 (코드 개선: 불필요한 주석 제거, 중복된 스타일 제거, CSS 속성 순서 정리, 중복된 meta 태그 제거거)
 
 Express.js 적용
  server.js 생성, 정적파일 제공
@@ -35,7 +36,7 @@ S3 에 버킷 생성 및 정적파일 웹사이트 구현
 
 Route 53에서 도메인구입, ACM 인증, CloudFront 생성하여 도메인(wwww.javierju.com) 연결, https 설정정
 
-Github Action 에서 main push 시 S3 자동 업데이트 구현(CloudFront 캐시 무효화도 추가가)
+Github Action 에서 main push 시 S3 자동 업데이트 구현(CloudFront 캐시 무효화도 추가)
 
 
 추가 예정
