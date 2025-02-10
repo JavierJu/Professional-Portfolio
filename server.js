@@ -2,7 +2,14 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const PORT = 80;
+const PORT = process.env.PORT || 3000;
+
+// 정적 파일 제공
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // 리디렉션 설정
 // app.use((req, res, next) => {
@@ -28,6 +35,4 @@ app.get("/", (req, res) => {
 });
 
 // 서버 실행
-app.listen(PORT, "0.0.0.0", () => {
-    console.log(`🚀 Server running at http://127.0.0.1:${PORT}/`);
-});
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

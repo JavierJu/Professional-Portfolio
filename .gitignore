@@ -3,3 +3,4 @@ node_modules/
 *.icloud
 style.compile.css
 style.prefix.css
+.env
