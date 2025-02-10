@@ -1,4 +1,4 @@
-name: Deploy to S3
+name: Deploy to S3 and Invalidate CloudFront Cache
 
 on:
   push:
@@ -21,3 +21,6 @@ jobs:
 
       - name: Deploy to S3
         run: aws s3 sync public/ s3://www.javierju.com --delete
+
+      - name: Invalidate CloudFront Cache
+        run: aws cloudfront create-invalidation --distribution-id E1GPXIPESV5ZA2 --paths "/*"
