@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- Basic Meta Tags -->
   <title>YelpCamp - Full-Stack Web App Walkthrough</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,49 +11,37 @@
     content="YelpCamp is a full-stack web app for discovering and reviewing campgrounds. Built with Node.js, Express, and MongoDB.">
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.jacobgrisham.com/">
-  <meta property="og:title" content="YelpCamp Project Walkthrough">
-  <meta property="og:site_name" content="Jacob Grisham Professional Portfolio">
-  <meta property="og:image" content="https://www.jacobgrisham.com/img/thumbnail.png">
-  <meta property="og:image:secure_url" content="https://www.jacobgrisham.com/img/thumbnail.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://www.javierju.com/projects/yelpcamp.html">
+  <meta property="og:title" content="YelpCamp - Full-Stack Web App">
+  <meta property="og:image" content="https://www.javierju.com/img/yelpcamp-thumbnail.png">
+  <meta property="og:image:alt" content="Screenshot of YelpCamp web app">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:alt" content="YelpCamp">
+  <meta property="og:image:height" content="630">
   <meta property="og:description"
-    content="Walkthrough of my project YelpCamp. YelpCamp is a monolithic MVC full-stack web app built with Node.js, Express.js, MongoDB, EJS, Bootstrap, and hosted on Heroku, Cloudflare, and MongoDB Atlas with continuous delivery with Circle CI. The main features include the ability to create campground listings, leave comments, and review campgrounds."
-    name="description">
-  <meta property="fb:app_id" content="2733409333567092">
+    content="YelpCamp is a full-stack web app that allows users to discover and review campgrounds. Built with Node.js, Express, and MongoDB.">
 
   <!-- Twitter Meta Tags -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://www.jacobgrisham.com/">
-  <meta property="twitter:title" content="YelpCamp Project Walkthrough">
-  <meta property="twitter:description"
-    content="Walkthrough of my project YelpCamp. YelpCamp is a monolithic MVC full-stack web app built with Node.js, Express.js, MongoDB, EJS, Bootstrap, and hosted on Heroku, Cloudflare, and MongoDB Atlas with continuous delivery with Circle CI. The main features include the ability to create campground listings, leave comments, and review campgrounds.">
-  <meta property="twitter:image" content="https://www.jacobgrisham.com/img/thumbnail.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.javierju.com/projects/yelpcamp.html">
+  <meta name="twitter:title" content="YelpCamp - Full-Stack Web App">
+  <meta name="twitter:description"
+    content="YelpCamp is a full-stack web app that allows users to discover and review campgrounds. Built with Node.js, Express, and MongoDB.">
+  <meta name="twitter:image" content="https://www.javierju.com/img/yelpcamp-thumbnail.png">
 
   <!-- SEO -->
-  <link rel="canonical" href="https://www.jacobgrisham.com/pages/projects/yelpcamp.html">
+  <link rel="canonical" href="https://www.javierju.com/projects/yelpcamp.html">
 
-  <!-- FONTS -->
-  <link
-    href="https://fonts.googleapis.com/css2?&family=Montserrat:wght@100;200;300&family=Nunito+Sans:wght@200;300;400&family=PT+Mono&display=swap"
-    rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css">
-  <!-- Include this second link for production -->
-  <link rel="text/css" href="../css/style.css">
 
-  <!-- FAVICON -->
-  <link rel="icon" href="../favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="../favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
 </head>
 
@@ -60,7 +49,8 @@
   <!-- Loader -->
   <div class="loader"></div>
 
-  <div class="projects-body__focus-container">
+  <!-- Main -->
+  <main class="projects-body__focus-container">
     <!-- HEADER -->
     <section>
       <h1 class="projects-body__main-heading">YelpCamp Project Walkthrough</h1>
@@ -446,13 +436,13 @@
         <li>Gaining exposure to cloud-based IDE development using GoormIDE</li>
       </ul>
     </section>
-  </div>
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
     <p class="footer__fun-note">For my lovely wife and son in Japan
       <svg class="footer__icon">
-        <use xlink:href="img/sprite.svg#icon-heart"></use>
+        <use xlink:href="../img/sprite.svg#icon-heart"></use>
       </svg>
     </p>
     <p>Copyright &copy; <time id="date"></time> by Javier Ju</p>
