@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
-gtag('config', 'G-SV51NLJS21');
+
+gtag('config', 'G-6153GNV2FE');
 
 // --------------------------------------
 // Copyright Date 자동 업데이트
