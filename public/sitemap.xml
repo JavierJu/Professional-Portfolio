@@ -1,26 +1,24 @@
-<?xml version="2.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 홈 페이지 -->
   <url>
-    <loc>http://www.javierju.com/</loc>
-    <lastmod>2025-02-11</lastmod>
-     <changefreq>monthly</changefreq>
-     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>http://www.javierju.com/#projects</loc>
+    <loc>https://www.javierju.com/</loc>
     <lastmod>2025-02-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
   </url>
+
+  <!-- 개별 프로젝트 페이지 -->
   <url>
-    <loc>http://www.javierju.com/##popup--card-1</loc>
-    <lastmod>2025-02-11</lastmod>
+    <loc>https://www.javierju.com/projects/yelpcamp.html</loc>
+    <lastmod>2025-02-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>http://www.javierju.com/##popup--card-2</loc>
-    <lastmod>2025-02-11</lastmod>
+    <loc>https://www.javierju.com/projects/professional-portfolio.html</loc>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
