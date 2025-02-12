@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- Basic Meta Tags -->
   <title>YelpCamp - Full-Stack Web App Walkthrough</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,49 +11,37 @@
     content="YelpCamp is a full-stack web app for discovering and reviewing campgrounds. Built with Node.js, Express, and MongoDB.">
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.jacobgrisham.com/">
-  <meta property="og:title" content="YelpCamp Project Walkthrough">
-  <meta property="og:site_name" content="Jacob Grisham Professional Portfolio">
-  <meta property="og:image" content="https://www.jacobgrisham.com/img/thumbnail.png">
-  <meta property="og:image:secure_url" content="https://www.jacobgrisham.com/img/thumbnail.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://www.javierju.com/projects/yelpcamp.html">
+  <meta property="og:title" content="YelpCamp - Full-Stack Web App">
+  <meta property="og:image" content="https://www.javierju.com/img/yelpcamp-thumbnail.png">
+  <meta property="og:image:alt" content="Screenshot of YelpCamp web app">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:alt" content="YelpCamp">
+  <meta property="og:image:height" content="630">
   <meta property="og:description"
-    content="Walkthrough of my project YelpCamp. YelpCamp is a monolithic MVC full-stack web app built with Node.js, Express.js, MongoDB, EJS, Bootstrap, and hosted on Heroku, Cloudflare, and MongoDB Atlas with continuous delivery with Circle CI. The main features include the ability to create campground listings, leave comments, and review campgrounds."
-    name="description">
-  <meta property="fb:app_id" content="2733409333567092">
+    content="YelpCamp is a full-stack web app that allows users to discover and review campgrounds. Built with Node.js, Express, and MongoDB.">
 
   <!-- Twitter Meta Tags -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://www.jacobgrisham.com/">
-  <meta property="twitter:title" content="YelpCamp Project Walkthrough">
-  <meta property="twitter:description"
-    content="Walkthrough of my project YelpCamp. YelpCamp is a monolithic MVC full-stack web app built with Node.js, Express.js, MongoDB, EJS, Bootstrap, and hosted on Heroku, Cloudflare, and MongoDB Atlas with continuous delivery with Circle CI. The main features include the ability to create campground listings, leave comments, and review campgrounds.">
-  <meta property="twitter:image" content="https://www.jacobgrisham.com/img/thumbnail.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.javierju.com/projects/yelpcamp.html">
+  <meta name="twitter:title" content="YelpCamp - Full-Stack Web App">
+  <meta name="twitter:description"
+    content="YelpCamp is a full-stack web app that allows users to discover and review campgrounds. Built with Node.js, Express, and MongoDB.">
+  <meta name="twitter:image" content="https://www.javierju.com/img/yelpcamp-thumbnail.png">
 
   <!-- SEO -->
-  <link rel="canonical" href="https://www.jacobgrisham.com/pages/projects/yelpcamp.html">
+  <link rel="canonical" href="https://www.javierju.com/projects/yelpcamp.html">
 
-  <!-- FONTS -->
-  <link
-    href="https://fonts.googleapis.com/css2?&family=Montserrat:wght@100;200;300&family=Nunito+Sans:wght@200;300;400&family=PT+Mono&display=swap"
-    rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css">
-  <!-- Include this second link for production -->
-  <link rel="text/css" href="../css/style.css">
 
-  <!-- FAVICON -->
-  <link rel="icon" href="../favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="../favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
 </head>
 
@@ -60,369 +49,127 @@
   <!-- Loader -->
   <div class="loader"></div>
 
-  <div class="projects-body__focus-container">
-    <!-- HEADER -->
-    <section>
-      <h1 class="projects-body__main-heading">YelpCamp Project Walkthrough</h1>
-      <h2 class="blog-body__sub-heading">March - June 2020</h2>
+  <!-- Main Content -->
+  <main class="projects-body__focus-container">
 
-      <h2 class="projects-body__heading">Source Code
-        <span>
-          <a href="https://github.com/JacobGrisham/YelpCamp" aria-label="link to YelpCamp source code" target="_blank"
+    <!-- HEADER -->
+    <section class="project-header">
+      <h1 class="projects-body__main-heading">YelpCamp - Full-Stack Web App</h1>
+      <h2 class="blog-body__sub-heading">March - June 2025</h2>
+
+      <div class="project-links">
+        <h2 class="projects-body__heading">Source Code
+          <a href="https://github.com/JavierJu/YelpCamp" aria-label="GitHub repository for YelpCamp" target="_blank"
             rel="noopener noreferrer">
             <svg class="skills-box__header-icon">
               <use xlink:href="../img/sprite.svg#icon-github"></use>
             </svg>
           </a>
-        </span>
-      </h2>
+        </h2>
+      </div>
 
       <div>
-        <img src="../img/YelpCampMetaImage-min.png" class="projects-body__image lax"></img>
+        <img src="../img/Yelp-Camp_App.png" class="projects-body__image" alt="YelpCamp Screenshot">
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section>
-      <h2 class="projects-body__heading">About</h2>
-      <p>First full-stack web application. Fundamentally, it's review website for campsites. The main features are
-        login, sign-up, Admin role, Google Maps API, and Create, Edit, Update, Delete (CRUD) for campgrounds, comments,
-        and reviews. Create routes have authentication. Edit, Update, and Delete routes have authentication and
-        authorization. The basic foundation was built in the capstone project from the Udemy course <i>The Web Developer
-          Bootcamp</i>. The core of the application was built from March - June 2020, with sporadic updates up until
-        April 2022.</p>
+    <section class="project-overview">
+      <h2 class="projects-body__heading">Project Overview</h2>
+      <p>
+        YelpCamp is a full-stack web application for users to discover and review campgrounds.
+        The platform includes user authentication, authorization, and CRUD functionality for campgrounds, comments, and
+        reviews.
+        The project was built during a Udemy bootcamp as an introduction to full-stack development.
+      </p>
     </section>
 
-    <!-- PRODUCT FEATURES AND SPECIFICATIONS -->
-    <section>
-      <h2 class="projects-body__heading">Product Features and Specifications</h2>
-      <ul class="projects-body__list">
-        <li>Account creation, including a secret Admin role</li>
-        <li>Users can upload data on campgrounds, edit the data they uploaded, but only the data they uploaded and no
-          one elses.</li>
-        <li>Users can leave as many comments as they want in the comment section on each campground page</li>
-        <li>Each user can leave up to one review for each campground between 1 and 5 stars</li>
-        <li>Google Maps embedded on each campground page</li>
-        <li>Google Ads on each campground page to pay for the Google Maps</li>
-      </ul>
-    </section>
-
-    <!-- TECHONOLOGIES -->
+    <!-- TECHNOLOGY STACK -->
     <section class="technologies">
-      <h2 class="projects-body__heading technologies__header">Technologies</h2>
-      <div class="skills-box__no-shadow">
-        <h4 class="skills-box__header">
-          <svg class="skills-box__header-icon">
-            <use xlink:href="../img/sprite.svg#icon-embed2"></use>
-          </svg>
-          Front-End
-        </h4>
-        <ul class="skills-box__list">
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-html5"></use>
-            </svg>
-            HTML5
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-css3"></use>
-            </svg>
-            CSS3
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-bootstrap"></use>
-            </svg>
-            Boostrap
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-javascript"></use>
-            </svg>
-            Javascript ES6+
-          </li>
+      <h2 class="projects-body__heading technologies__header">Tech Stack</h2>
+
+      <div>
+        <h3>Frontend</h3>
+        <ul class="projects-body__list">
+          <li>HTML5</li>
+          <li>CSS3 / Bootstrap</li>
+          <li>JavaScript (ES6+)</li>
         </ul>
       </div>
 
-      <!-- BACK-END -->
-      <div class="skills-box__no-shadow">
-        <h4 class="skills-box__header">
-          <svg class="skills-box__header-icon">
-            <use xlink:href="../img/sprite.svg#icon-terminal"></use>
-          </svg>
-          Back-End
-        </h4>
-        <ul class="skills-box__list">
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-node-dot-js"></use>
-            </svg>
-            Node.js w/ Express.js and EJS
-          </li>
+      <div>
+        <h3>Backend</h3>
+        <ul class="projects-body__list">
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>EJS (Templating)</li>
         </ul>
       </div>
 
-      <!-- Testing -->
-      <div class="skills-box__no-shadow">
-        <h4 class="skills-box__header">
-          <svg class="skills-box__header-icon">
-            <use xlink:href="../img/sprite.svg#icon-lab"></use>
-          </svg>
-          Testing
-        </h4>
-        <ul class="skills-box__list">
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-jest"></use>
-            </svg>
-            Jest
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-lighthouse"></use>
-            </svg>
-            Google Lighthouse
-          </li>
+      <div>
+        <h3>Database</h3>
+        <ul class="projects-body__list">
+          <li>MongoDB (Atlas)</li>
         </ul>
       </div>
 
-      <!-- DATABASE -->
-      <div class="skills-box__no-shadow">
-        <h4 class="skills-box__header">
-          <svg class="skills-box__header-icon">
-            <use xlink:href="../img/sprite.svg#icon-database"></use>
-          </svg>
-          Database
-        </h4>
-        <ul class="skills-box__list">
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-mongodb"></use>
-            </svg>
-            MongoDB
-          </li>
+      <div>
+        <h3>Testing</h3>
+        <ul class="projects-body__list">
+          <li>Jest</li>
+          <li>Google Lighthouse</li>
         </ul>
       </div>
 
-      <!-- DEVELOPMENT -->
-      <div class="skills-box__no-shadow">
-        <h4 class="skills-box__header">
-          <svg class="skills-box__header-icon">
-            <use xlink:href="../img/sprite.svg#icon-cogs"></use>
-          </svg>
-          Development
-        </h4>
-        <ul class="skills-box__list">
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-git"></use>
-            </svg>
-            Git
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-github"></use>
-            </svg>
-            GitHub
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-codacy"></use>
-            </svg>
-            Codacy
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-codeclimate"></use>
-            </svg>
-            CodeClimate
-          </li>
+      <div>
+        <h3>Deployment</h3>
+        <ul class="projects-body__list">
+          <li>Render</li>
+          <li>Cloudflare</li>
+          <li>CircleCI</li>
         </ul>
       </div>
 
-      <!-- PRODUCTION -->
-      <div class="skills-box__no-shadow">
-        <h4 class="skills-box__header">
-          <svg class="skills-box__header-icon">
-            <use xlink:href="../img/sprite.svg#icon-cloud-upload"></use>
-          </svg>
-          Production
-        </h4>
-        <ul class="skills-box__list">
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-heroku"></use>
-            </svg>
-            Heroku
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-cloudflare"></use>
-            </svg>
-            Cloudflare
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-mongodb"></use>
-            </svg>
-            MongoDB Atlas
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-sentry"></use>
-            </svg>
-            Sentry
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-circleci"></use>
-            </svg>
-            CircleCI
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-google-domains"></use>
-            </svg>
-            Google Domains
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-google-analytics"></use>
-            </svg>
-            Google Analytics
-          </li>
-          <li class="skills-box__item">
-            <svg class="skills-box__icon">
-              <use xlink:href="../img/sprite.svg#icon-google-ads"></use>
-            </svg>
-            Google Ads
-          </li>
+      <div>
+        <h3>Development</h3>
+        <ul class="projects-body__list">
+          <li>Git & GitHub</li>
         </ul>
       </div>
-    </section>
-
-    <!-- UX/UI MOCKS AND GRAPHIC DESIGN -->
-    <section>
-      <h2 class="projects-body__heading">UX/UI Mocks and Graphic Design</h2>
-      <p class="projects-body__paragraph-spacing-below">Create and Update forms have both client-side and server-side
-        validation for a better user experience</p>
-
-      <p class="projects-body__paragraph-spacing-below">Leveraged the Boostrap Design System</p>
-
-      <p>Used Inkscape to create SVG illustrations from scratch to gain a deeper understanding of SVG. I don't plan on
-        creating SVG graphics from scratch often, but now that I know how to do it, I can easily edit existing SVGs. If
-        I'm unable to find an open-source SVG, now I can always create one exactly as needed. When I was younger, I used
-        to draw all the time, so creating my own SVGs in Inkscape was actually pretty fun to explore. I had some formal
-        training in both private institutions and in public education, specifically in high school, and it was fun to
-        see how the same principles applied to a medium I never tried before: graphic design.</p>
     </section>
 
     <!-- DESIGN AND ARCHITECTURE -->
     <section>
-      <h2 class="projects-body__heading">Design and Architecture</h2>
-      <h3>Code Architecture</h3>
-      <p class="projects-body__paragraph-spacing-below">Used a Model-View-Controller (MVC) Monolithic Architecture since
-        it's the most simple architecture to gain an introduction to full-stack web development. Building a MVC Monolith
-        allows one to gain a perspective on the range of achitectures, particularly the lower-end of the range. The
-        Monolith Architecture falls short in scalability and separation of front-end and back-end. The MVC Architecture
-        falls short when the application begins to grow in complexity with the addition of services that could stand on
-        thier own. The MVC Architecture is perhaps best used for simple proof-of-concept projects, like this one.
-        However, for any projects that serve real business needs, I would opt to use an event-driven serverless
-        architecture.</p>
-
-      <div>
+      <h2 class="projects-body__heading">System Architecture</h2>
+      <p class="projects-body__paragraph-spacing-below">The application follows an MVC (Model-View-Controller)
+        monolithic architecture. MongoDB is used for flexible
+        data storage, Express.js for routing and middleware, and EJS for templating.</p>
+      <!-- <div>
         <img src="../img/YelpCamp-Code-Architecture.drawio.svg" alt="YelpCamp Code Architecture Diagram"
-          class="projects-body__image projects-body__paragraph-spacing-below lax"></img>
-      </div>
+          class="projects-body__image projects-body__paragraph-spacing-below"></img>
+      </div> -->
+    </section>
 
-      <p class="projects-body__paragraph-spacing-below"><span class="projects-body__bold-text">Model</span>: NoSQL
-        database for the flexibility compared to a SQL database, MongoDB in particular because of its prevalence in the
-        industry.</p>
-
-      <p class="projects-body__paragraph-spacing-below"><span class="projects-body__bold-text">View</span>: Chose
-        Embedded Javascript Templates (EJS) as the front-end templating language for more DRY code compared to plain
-        HTML and for dynamic user-experiences. This is a simple templating language, similar to Jinja for Python. Both
-        however fall short on front-end scalability, modularity, and performance compared to a framework like React.
-        Working with simple templating languges helps to remind me the benefits of working with a framework like
-        React.Chose Bootstrap 5 as the CSS framework to keep the UI simple and quick to build. Since the website takes a
-        performance hit for loading Bootstrap, took full advantage of advanced Bootstrap features such as custom
-        validation for all forms and animated form input for the login and register pages.</p>
-
-      <p class="projects-body__paragraph-spacing-below"><span class="projects-body__bold-text">Controller</span>: Chose
-        Node.js as the backend programming language for its rich ecosystem and community support. For example,leveraged
-        PassportJs for the authentication and authorization since it's a common out-of-the-box solution. Create routes
-        have authentication. Update, and Delete routes have authentication and authorization. Chose Express.js as the
-        Node.js application framework since it's a lightweight framework, which is ideal for gaining an understanding of
-        how to build the backend from scratch. Compared to a framework like Nest.js or even Django, Express.js doesn't
-        have many features out of the box.</p>
-
-      <h3>Database Schema</h3>
-      <div>
-        <img src="../img/YelpCamp-Database-Schema.drawio.svg" alt="YelpCamp Database Schema"
-          class="projects-body__image--smaller projects-body__paragraph-spacing-below lax"></img>
-      </div>
-
-      <h3>Tests</h3>
-      <p class="projects-body__paragraph-spacing-below">The integration tests using <a href="https://jestjs.io/"
-          class="curriculum__link" target="_blank" rel="noopener noreferrer">Jest</a>. The test suite checks for the
-        creation of data, the functionality of the schema, and the functionality of the validation. The tests are
-        iterated over each of the models: campgrounds, comments, reviews, users. Integration-tests achieved 94% test
-        coverage. Refactored code using automated code review tools such as Code Climate and Codacy to increase code
-        quality grade from a ‘D’ to a ‘B’. Optimized performance, security, and accessibility using Google Lighthouse to
-        increase score from 80 to 100</p>
-
-      <h3>Production System Architecture</h3>
-      <p class="projects-body__paragraph-spacing-below">Heroku as the cloud hosting provider to gain experience with
-        PaaS. In November 2022, Heroku ended support of the free tier. When I <em>was</em> using the free tier, it
-        caused the application to sleep after 30 minutes of inactivity, and I kept the application awake from 6:00 a.m.
-        to 11:59 p.m. PST with <a href="https://kaffeine.herokuapp.com/" class="curriculum__link" target="_blank"
-          rel="noopener noreferrer">Kaffeine</a>. Cloudflare as the Content Delivery Network to serve users outside of
-        the U.S. with faster load times and for the free SSL certificate, which is needed for domain forwarding to
-        https://www.yelpcamp.app. Cloudflare also offers improved security and performance over the defaults in Google
-        Domains. Used CircleCI for Continuous Delivery and Deploymemnt and reduced the runtime by 50% through caching
-        optimzations</p>
-
-      <div>
-        <img src="../img/YelpCamp-Production-Architecture.drawio.svg"
-          alt="YelpCamp Production System Architecture Diagram"
-          class="projects-body__image projects-body__paragraph-spacing-below lax"></img>
-      </div>
-
-      <h3>Production Scalability and Load limitations</h3>
-      <p>The production server is hosted on Heroku Basic Dyno Tier, which has a limit of 512MB of RAM, no horizontal
-        scaling, no autoscaling, and the server is not dedicated. If I needed to scale up due to an overloaded server, I
-        would have to upgrade a Standard 1x Dyno for horizontal scaling. However, the web traffic has yet to reach a
-        sustained usage of 50% server capacity. The production database is hosted on MongoDB Atlas Shared Plan M0
-        Cluster Tier, which has a limit of 512MB of storage. Considering that the current usage as of February 2023 is
-        only 400KB, the website could expand up to 1280 times its current size. Given that the site went live in June of
-        2020, the current rate of data storage is 12.5KB/month. The database is the least likely bottleneck in this
-        production system.</p>
+    <!-- KEY FEATURES -->
+    <section>
+      <h2 class="projects-body__heading">Key Features</h2>
+      <ul class="projects-body__list">
+        <li>User authentication & authorization</li>
+        <li>CRUD functionality for campgrounds, comments, and reviews</li>
+        <li>Google Maps API integration</li>
+        <li>Responsive UI with Bootstrap</li>
+      </ul>
     </section>
 
     <!-- PRODUCTION METRICS -->
     <section>
-      <h2>Production System Cost</h2>
+      <h2 class="projects-body__heading">Production & Performance</h2>
       <ul class="projects-body__list">
-        <li>Heroku Basic Dyno Tier: $7/month</li>
-        <li>MongoDB Atlas Shared Plan M0 Cluster Tier: free</li>
-        <li>Cloudflare Free Tier: free</li>
-        <li>Google Domain for yelpcamp.app: $14/year</li>
-        <li>GitHub Free Tier: free</li>
-      </ul>
-      <h2 class="projects-body__heading">Production Metrics</h2>
-      <ul class="projects-body__list">
-        <li><span class="projects-body__bold-text">Traffic</span>: 800+ total website visits and 5000+ total pageviews
-          since launch. Approximately 100 monthly active users (MAU) and 93 accounts created worldwide. Increased peak
-          MAU by 400% and median MAU by 100%.</li>
-        <li><span class="projects-body__bold-text">Search Engine Optimization (SEO)</span>: Achieved Google PageRank #8
-          for the search term “yelpcamp”</li>
-        <li><span class="projects-body__bold-text">Site Reliability</span>: 70% uptime service-level indicator (SLI)
-        </li>
-        <li><span class="projects-body__bold-text">Security</span>: Mozzila Observatory</li>
-        <li><span class="projects-body__bold-text">Performance</span>: from Google Lighthouse</li>
-        <li><span class="projects-body__bold-text">Accessibility</span>: from Google Lighthouse</li>
-        <li><span class="projects-body__bold-text">Cross-Browser Compatibility</span>: from LambdaTest</li>
+        <li><strong>Hosting:</strong> Deployed on Render</li>
+        <li><strong>Database:</strong> MongoDB Atlas</li>
+        <li><strong>Traffic:</strong> 100+ monthly users</li>
+        <li><strong>SEO:</strong> Google PageRank #8 for "YelpCamp"</li>
+        <li><strong>Performance:</strong> Optimized using Google Lighthouse</li>
       </ul>
     </section>
 
@@ -431,30 +178,16 @@
       <h2 class="projects-body__heading">Lessons Learned</h2>
       <ul class="projects-body__list">
         <li>First full-stack web application</li>
-        <li>Introduction to Express.js</li>
-        <li>Introduction to MongoDB database design</li>
-        <li>Introduction to Bootstrap</li>
-        <li>Git for version control to learn version control</li>
-        <li>Site is hosted on Heroku to learn how to deploy applications</li>
-        <li>Optimizing performance, security, and accessibility using Google Lighthouse</li>
-        <li>Integration testing with Jest</li>
-        <li>Automating code review with Codacy and CodeClimate</li>
-        <li>Continuous Integration and Continuous Deployment with CircleCI</li>
-        <li>Deploying app to Heroku and Database to MongoDB Atlas</li>
-        <li>Cloudflare as a Content Delivery Network in conjunction with custom Google Domain and Heroku</li>
-        <li>Scalable Vector Graphic (SVG) illustration with Inkscape</li>
-        <li>Gaining exposure to cloud-based IDE development using GoormIDE</li>
+        <li>Understanding of Express.js & MongoDB</li>
+        <li>Deployment process using Render & Cloudflare</li>
+        <li>Continuous Integration with CircleCI</li>
       </ul>
     </section>
-  </div>
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p class="footer__fun-note">For my lovely wife and son in Japan
-      <svg class="footer__icon">
-        <use xlink:href="img/sprite.svg#icon-heart"></use>
-      </svg>
-    </p>
+    <p class="footer__fun-note">For my lovely wife and son in Japan ❤️</p>
     <p>Copyright &copy; <time id="date"></time> by Javier Ju</p>
   </footer>
 
