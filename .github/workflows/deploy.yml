@@ -3,11 +3,11 @@ name: Deploy to S3 and Invalidate CloudFront Cache
 on:
   push:
     branches:
-      - main  # main 브랜치에 푸시하면 자동 배포
+      - main # main 브랜치에 푸시하면 자동 배포
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # GitHub Actions 실행 환경
+    runs-on: ubuntu-latest # GitHub Actions 실행 환경
 
     steps:
       - name: Checkout repository

@@ -1,144 +1,143 @@
-@use "abstract/variables";
+@use 'abstract/variables';
 
 .loader {
-	height: 100vh;
-	width: 100vw;
-	top: 0;
-	left: 0;
-	position: fixed;
-	z-index: 5000;
-	background-color: variables.$navy-2;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 5000;
+  background-color: variables.$navy-2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .code {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 .laptop {
+  &__svg {
+    height: 60rem;
+    width: 60rem;
 
-	&__svg {
-		height: 60rem;
-		width: 60rem;
-
-		@media only screen and (max-width: variables.$bp-mobile-l) {
-			height: 30rem;
-			width: 30rem;
-		}
-	}
+    @media only screen and (max-width: variables.$bp-mobile-l) {
+      height: 30rem;
+      width: 30rem;
+    }
+  }
 }
 
 #code-1 {
-	animation: code-1 0.5s linear 3.5s running;
+  animation: code-1 0.5s linear 3.5s running;
 }
 
 #code-2 {
-	animation: code-2 0.5s linear 3s running;
+  animation: code-2 0.5s linear 3s running;
 }
 
 #code-3 {
-	animation: code-3 0.5s linear 2.5s running;
+  animation: code-3 0.5s linear 2.5s running;
 }
 
 #code-4 {
-	animation: code-4 0.5s linear 2s running;
+  animation: code-4 0.5s linear 2s running;
 }
 
 #code-5 {
-	animation: code-5 0.5s linear 1.5s running;
+  animation: code-5 0.5s linear 1.5s running;
 }
 
 #code-6 {
-	animation: code-6 0.5s linear 1s running;
+  animation: code-6 0.5s linear 1s running;
 }
 
 #code-7 {
-	animation: code-7 0.5s linear 0.5s running;
+  animation: code-7 0.5s linear 0.5s running;
 }
 
 #code-8 {
-	animation: code-8 0.5s linear 0s running;
+  animation: code-8 0.5s linear 0s running;
 }
 
 @keyframes code-1 {
-	from {
-		width: 0px;
-	}
+  from {
+    width: 0px;
+  }
 
-	to {
-		width: 7px;
-	}
+  to {
+    width: 7px;
+  }
 }
 
 @keyframes code-2 {
-	from {
-		width: 0px;
-	}
+  from {
+    width: 0px;
+  }
 
-	to {
-		width: 4px;
-	}
+  to {
+    width: 4px;
+  }
 }
 
 @keyframes code-3 {
-	from {
-		width: 0px;
-	}
+  from {
+    width: 0px;
+  }
 
-	to {
-		width: 6px;
-	}
+  to {
+    width: 6px;
+  }
 }
 
 @keyframes code-4 {
-	from {
-		width: 0px;
-	}
+  from {
+    width: 0px;
+  }
 
-	to {
-		width: 3px;
-	}
+  to {
+    width: 3px;
+  }
 }
 
 @keyframes code-5 {
-	from {
-		width: 0px;
-	}
+  from {
+    width: 0px;
+  }
 
-	to {
-		width: 3px;
-	}
+  to {
+    width: 3px;
+  }
 }
 
 @keyframes code-6 {
-	from {
-		width: 0px;
-	}
+  from {
+    width: 0px;
+  }
 
-	to {
-		width: 4px;
-	}
+  to {
+    width: 4px;
+  }
 }
 
 @keyframes code-7 {
-	from {
-		width: 0px;
-	}
+  from {
+    width: 0px;
+  }
 
-	to {
-		width: 9.5px;
-	}
+  to {
+    width: 9.5px;
+  }
 }
 
 @keyframes code-8 {
-	from {
-		width: 0px;
-	}
+  from {
+    width: 0px;
+  }
 
-	to {
-		width: 6px;
-	}
+  to {
+    width: 6px;
+  }
 }

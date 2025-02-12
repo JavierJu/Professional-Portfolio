@@ -1,4 +1,4 @@
-@use "abstract/mixins";
+@use 'abstract/mixins';
 
 .blog-body {
   @include mixins.blog-and-project-formatting;

@@ -1,197 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <title>Javier Ju - Full-Stack Developer Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Javier Ju" />
+    <meta
+      name="description"
+      content="Discover the portfolio of Javier Ju, a full-stack developer specializing in JavaScript, React, Node.js, and AWS. Explore projects and technical expertise."
+    />
 
-<head>
-  <!-- Basic Meta Tags -->
-  <title>Javier Ju - Full-Stack Developer Portfolio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Javier Ju">
-  <meta name="description"
-    content="Discover the portfolio of Javier Ju, a full-stack developer specializing in JavaScript, React, Node.js, and AWS. Explore projects and technical expertise.">
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:url" content="https://www.javierju.com/" />
+    <meta
+      property="og:title"
+      content="Javier Ju - Full-Stack Developer Portfolio"
+    />
+    <meta
+      property="og:image"
+      content="https://www.javierju.com/img/portfolio-thumbnail.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Screenshot of Javier Ju's Portfolio"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:description"
+      content="Discover the portfolio of Javier Ju, a full-stack developer specializing in JavaScript, React, Node.js, and AWS. Explore projects and technical expertise."
+    />
 
-  <!-- Open Graph / Facebook / LinkedIn -->
-  <meta property="og:url" content="https://www.javierju.com/">
-  <meta property="og:title" content="Javier Ju - Full-Stack Developer Portfolio">
-  <meta property="og:image" content="https://www.javierju.com/img/portfolio-thumbnail.png">
-  <meta property="og:image:alt" content="Screenshot of Javier Ju's Portfolio">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:description"
-    content="Discover the portfolio of Javier Ju, a full-stack developer specializing in JavaScript, React, Node.js, and AWS. Explore projects and technical expertise.">
+    <!-- Twitter Meta Tags -->
+    <meta
+      name="twitter:title"
+      content="Javier Ju - Full-Stack Developer Portfolio"
+    />
+    <meta name="twitter:url" content="https://www.javierju.com/" />
+    <meta
+      name="twitter:description"
+      content="Discover the portfolio of Javier Ju, a full-stack developer specializing in JavaScript, React, Node.js, and AWS. Explore projects and technical expertise."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.javierju.com/img/portfolio-thumbnail.png"
+    />
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:title" content="Javier Ju - Full-Stack Developer Portfolio">
-  <meta name="twitter:url" content="https://www.javierju.com/">
-  <meta name="twitter:description"
-    content="Discover the portfolio of Javier Ju, a full-stack developer specializing in JavaScript, React, Node.js, and AWS. Explore projects and technical expertise.">
-  <meta name="twitter:image" content="https://www.javierju.com/img/portfolio-thumbnail.png">
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.javierju.com/index.html" />
 
-  <!-- SEO -->
-  <link rel="canonical" href="https://www.javierju.com/index.html">
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-</head>
+  <body id="index">
+    <!-- Loader -->
+    <div class="loader"></div>
 
-<body id="index">
-  <!-- Loader -->
-  <div class="loader"></div>
+    <!-- HEADER -->
+    <header class="banner">
+      <img
+        src="img/banner-image.jpg"
+        class="banner__image"
+        loading="lazy"
+        alt="Portfolio banner of software engineer Javier Ju"
+      />
+      <div class="banner__content">
+        <h1 class="banner__main">Javier Ju</h1>
+        <h2 class="banner__sub">Software Engineer</h2>
+      </div>
+    </header>
 
-  <!-- HEADER -->
-  <header class="banner">
-    <img src="img/banner-image.jpg" class="banner__image" loading="lazy"
-      alt="Portfolio banner of software engineer Javier Ju" />
-    <div class="banner__content">
-      <h1 class="banner__main">Javier Ju</h1>
-      <h2 class="banner__sub">Software Engineer</h2>
-    </div>
-  </header>
+    <!-- BIO SECTION -->
+    <section class="bio" id="bio">
+      <img
+        src="img/Profile_Account_Photo.jpg"
+        alt="Profile photo of software engineer Javier Ju"
+        class="bio__img"
+        loading="lazy"
+      />
 
-  <!-- BIO SECTION -->
-  <section class="bio" id="bio">
-    <img src="img/Profile_Account_Photo.jpg" alt="Profile photo of software engineer Javier Ju" class="bio__img"
-      loading="lazy">
+      <div class="bio__content">
+        <p>
+          Hello, my name is Javier Ju, and I am an aspiring software engineer
+          based in Hyogo, Japan. My journey into software development started
+          while working as an international sales professional in the
+          manufacturing industry. With over 15 years of experience in global
+          business, I have worked in Korea, Mexico, Guatemala, and the United
+          States, gaining strong expertise in communication, project management,
+          and problem-solving. I am fluent in Korean (native), business-level
+          Japanese and English, and conversational Spanish.
+        </p>
+        <p>
+          I became interested in software development while leveraging IT tools
+          such as DOMO and BOX in my work. Also My curiosity led me to explore
+          IoT projects using Arduino, where I built a self-watering system for
+          my plants as a hobby. This hands-on experience sparked my passion for
+          programming and problem-solving, motivating me to make a career
+          transition into software engineering.
+        </p>
+        <p>
+          Currently, I am focusing on full-stack web development with
+          JavaScript, TypeScript, Node.js, and React, while also exploring cloud
+          technologies such as AWS and DevOps tools like Git. I am actively
+          learning through Udemy courses and self-study with books, documenting
+          my progress in this portfolio and sharing insights through my blog.
+        </p>
+        <p>
+          My experience in international sales has equipped me with strong
+          analytical skills, adaptability, and the ability to manage complex
+          projects—qualities that I believe will be valuable as a software
+          engineer. I am excited about the endless possibilities in tech and am
+          eager to build scalable, efficient, and impactful solutions.
+        </p>
+        <p>
+          Feel free to explore my portfolio, check out my personal projects, and
+          follow my learning journey!
+        </p>
+      </div>
 
-    <div class="bio__content">
-      <p>
-        Hello, my name is Javier Ju, and I am an aspiring software engineer based in Hyogo, Japan. My journey into
-        software development started while working as an international sales professional in the manufacturing industry.
-        With over 15 years of experience in global business, I have worked in Korea, Mexico, Guatemala, and the United
-        States, gaining strong expertise in communication, project management, and problem-solving. I am fluent in
-        Korean (native), business-level Japanese and English, and conversational Spanish.
-      </p>
-      <p>
-        I became interested in software development while leveraging IT tools such as DOMO and BOX in my work. Also My
-        curiosity led me to explore IoT projects using Arduino, where I built a self-watering system for my plants as a
-        hobby.
-        This hands-on experience sparked my passion for programming and problem-solving, motivating me to make a career
-        transition into software engineering.
-      </p>
-      <p>
-        Currently, I am focusing on full-stack web development with JavaScript, TypeScript, Node.js, and React, while
-        also exploring cloud technologies such as AWS and DevOps tools like Git. I am actively learning through Udemy
-        courses and self-study with books, documenting my progress in this portfolio and sharing insights through my
-        blog.
-      </p>
-      <p>
-        My experience in international sales has equipped me with strong analytical skills, adaptability, and the
-        ability to manage complex projects—qualities that I believe will be valuable as a software engineer. I am
-        excited about the endless possibilities in tech and am eager to build scalable, efficient, and impactful
-        solutions.
-      </p>
-      <p>
-        Feel free to explore my portfolio, check out my personal projects, and follow my learning journey!
-      </p>
-    </div>
+      <button type="button" class="btn btn--slideToggle">Curriculum</button>
 
-    <button type="button" class="btn btn--slideToggle">Curriculum</button>
-
-    <!-- CURRICULUM -->
-    <div class="curriculum">
-      <!-- LIST OF COURSES AND BOOKS -->
-      <ul class="curriculum__main">
-        <!-- COMPLETED -->
-        <div class="curriculum__main-completed curriculum__box">
-          <h4 class="curriculum__header">
-            <div class="curriculum__header-completed">
-              <svg class="curriculum__header__icon">
-                <use xlink:href="img/sprite.svg#icon-checkmark"></use>
-              </svg>
-              Completed
+      <!-- CURRICULUM -->
+      <div class="curriculum">
+        <!-- LIST OF COURSES AND BOOKS -->
+        <ul class="curriculum__main">
+          <!-- COMPLETED -->
+          <div class="curriculum__main-completed curriculum__box">
+            <h4 class="curriculum__header">
+              <div class="curriculum__header-completed">
+                <svg class="curriculum__header__icon">
+                  <use xlink:href="img/sprite.svg#icon-checkmark"></use>
+                </svg>
+                Completed
+              </div>
+            </h4>
+            <div class="curriculum__list">
+              <li class="curriculum__item">
+                <a
+                  href="https://www.udemy.com/course/the-web-developer-bootcamp/"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Udemy Web Development Bootcamp</a
+                >
+              </li>
             </div>
-          </h4>
-          <div class="curriculum__list">
-            <li class="curriculum__item"><a href="https://www.udemy.com/course/the-web-developer-bootcamp/"
-                class="curriculum__link" target="_blank" rel="noopener noreferrer">
-                Udemy Web Development Bootcamp</a>
-            </li>
           </div>
-        </div>
 
-        <!-- IN PROGRESS -->
-        <div class="curriculum__main-progress curriculum__box">
-          <h4 class="curriculum__header">
-            <div class="curriculum__header-progress">
-              <svg class="curriculum__header__icon">
-                <use xlink:href="img/sprite.svg#icon-spinner6"></use>
-              </svg>
-              In Progress
+          <!-- IN PROGRESS -->
+          <div class="curriculum__main-progress curriculum__box">
+            <h4 class="curriculum__header">
+              <div class="curriculum__header-progress">
+                <svg class="curriculum__header__icon">
+                  <use xlink:href="img/sprite.svg#icon-spinner6"></use>
+                </svg>
+                In Progress
+              </div>
+            </h4>
+            <div class="curriculum__list">
+              <li class="curriculum__item">
+                <a
+                  href="https://www.udemy.com/course/git-and-github-bootcamp/"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Udemy The Git & Github Bootcamp</a
+                >
+              </li>
+              <li class="curriculum__item">
+                <a
+                  href="https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Udemy Ultimate AWS Certified Developer Associate</a
+                >
+              </li>
+              <li class="curriculum__item">
+                <a
+                  href="https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Udemy JavaScript - The Complete Guide (Beginner + Advanced)</a
+                >
+              </li>
+              <li class="curriculum__item">
+                <a
+                  href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Udemy React - The Complete Guide (incl. Next.js, Redux)</a
+                >
+              </li>
+              <li class="curriculum__item">
+                <a
+                  href="https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Udemy React, NodeJS, Express & MongoDB - The MERN Fullstack
+                  Guide</a
+                >
+              </li>
+              <li class="curriculum__item">
+                <a
+                  href="https://www.udemy.com/course/nodejs-the-complete-guide/"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Udemy NodeJS - The Complete Guide (MVC, REST APIs, GraphQL,
+                  Deno)</a
+                >
+              </li>
+              <li class="curriculum__item">
+                <a
+                  href="https://www.udemy.com/course/understanding-typescript/"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Udemy Understanding TypeScript</a
+                >
+              </li>
+              <li class="curriculum__item">
+                <a
+                  href="https://www.udemy.com/course/react-native-the-practical-guide/"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Udemy React Native - The Practical Guide</a
+                >
+              </li>
+              <li class="curriculum__item">
+                <a
+                  href="https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</a
+                >
+              </li>
             </div>
-          </h4>
-          <div class="curriculum__list">
-            <li class="curriculum__item"><a href="https://www.udemy.com/course/git-and-github-bootcamp/"
-                class="curriculum__link" target="_blank" rel="noopener noreferrer">
-                Udemy The Git & Github Bootcamp</a>
-            </li>
-            <li class="curriculum__item"><a
-                href="https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/" class="curriculum__link"
-                target="_blank" rel="noopener noreferrer">
-                Udemy Ultimate AWS Certified Developer Associate</a>
-            </li>
-            <li class="curriculum__item"><a
-                href="https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/"
-                class="curriculum__link" target="_blank" rel="noopener noreferrer">
-                Udemy JavaScript - The Complete Guide (Beginner + Advanced)</a>
-            </li>
-            <li class="curriculum__item"><a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
-                class="curriculum__link" target="_blank" rel="noopener noreferrer">
-                Udemy React - The Complete Guide (incl. Next.js, Redux)</a>
-            </li>
-            <li class="curriculum__item"><a
-                href="https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/"
-                class="curriculum__link" target="_blank" rel="noopener noreferrer">
-                Udemy React, NodeJS, Express & MongoDB - The MERN Fullstack Guide</a>
-            </li>
-            <li class="curriculum__item"><a href="https://www.udemy.com/course/nodejs-the-complete-guide/"
-                class="curriculum__link" target="_blank" rel="noopener noreferrer">
-                Udemy NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)</a>
-            </li>
-            <li class="curriculum__item"><a href="https://www.udemy.com/course/understanding-typescript/"
-                class="curriculum__link" target="_blank" rel="noopener noreferrer">
-                Udemy Understanding TypeScript</a>
-            </li>
-            <li class="curriculum__item"><a href="https://www.udemy.com/course/react-native-the-practical-guide/"
-                class="curriculum__link" target="_blank" rel="noopener noreferrer">
-                Udemy React Native - The Practical Guide</a>
-            </li>
-            <li class="curriculum__item"><a
-                href="https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/"
-                class="curriculum__link" target="_blank" rel="noopener noreferrer">
-                The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</a>
-            </li>
           </div>
-        </div>
-        <!-- QUEUED -->
-        <div class="curriculum__main-queue curriculum__box">
-          <h4 class="curriculum__header">
-            <div class="curriculum__header-queued">
-              <svg class="curriculum__header__icon">
-                <use xlink:href="img/sprite.svg#icon-bookmarks"></use>
-              </svg>
-              Queued
-            </div>
-          </h4>
-          <div class="curriculum__list">
-            <li class="curriculum__item"><a href="https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000002950897"
-                class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>[epub3.0] 코딩 자율학습 HTML + CSS +
-                  JavaScript</cite> by 김기수</a></li>
-            <li class="curriculum__item"><a href="https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000005411461"
-                class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>얄코의 TOO MUCH 친절한
-                  Git&Github</cite> by 고현민 </a></li>
-            <li class="curriculum__item"><a href="https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000002928558"
-                class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>생활코딩!
-                  HTML+CSS+JavaScript</cite> by 이고잉</a></li>
-            <!-- <li class="curriculum__item"><a href="https://www.oreilly.com/library/view/clean-code/9780136083238/"
+          <!-- QUEUED -->
+          <div class="curriculum__main-queue curriculum__box">
+            <h4 class="curriculum__header">
+              <div class="curriculum__header-queued">
+                <svg class="curriculum__header__icon">
+                  <use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+                </svg>
+                Queued
+              </div>
+            </h4>
+            <div class="curriculum__list">
+              <li class="curriculum__item">
+                <a
+                  href="https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000002950897"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><cite>[epub3.0] 코딩 자율학습 HTML + CSS + JavaScript</cite>
+                  by 김기수</a
+                >
+              </li>
+              <li class="curriculum__item">
+                <a
+                  href="https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000005411461"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><cite>얄코의 TOO MUCH 친절한 Git&Github</cite> by 고현민
+                </a>
+              </li>
+              <li class="curriculum__item">
+                <a
+                  href="https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000002928558"
+                  class="curriculum__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><cite>생활코딩! HTML+CSS+JavaScript</cite> by 이고잉</a
+                >
+              </li>
+              <!-- <li class="curriculum__item"><a href="https://www.oreilly.com/library/view/clean-code/9780136083238/"
                 class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>Clean Code: A Handbook of Agile
                   Software Craftsmanship</cite> by Robert Martin</a></li>
             <li class="curriculum__item"><a href="https://www.oreilly.com/library/view/code-complete-second/0735619670/"
@@ -204,55 +333,79 @@
                 href="https://www.oreilly.com/library/view/design-patterns-elements/0201633612/"
                 class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>Design Patterns: Elements of
                   Reusable Object-Oriented Software</cite> by Gamma et al.</a></li> -->
+            </div>
           </div>
+        </ul>
+        <div class="curriculum__methodology">
+          <p>
+            <strong>Methodology</strong>: I aim for a well-rounded and thorough
+            self-education. I reference
+            <a
+              href="https://roadmap.sh/frontend"
+              class="curriculum__methodology__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >this frontend roadmap</a
+            >,
+            <a
+              href="https://roadmap.sh/backend"
+              class="curriculum__methodology__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >this backend roadmap</a
+            >, and
+            <a
+              href="https://cdn.cs50.net/guide/guide-18.pdf"
+              class="curriculum__methodology__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Harvard's Unofficial Guide to CS</a
+            >
+            as syllabi to guide me on what topics to cover and the order in
+            which to complete them.
+          </p>
+          <p>
+            Among the various educational resources, each fulfills a purpose
+            based on its strength. I use Udemy for learning the basics of
+            full-stack web development, eDX and Coursera for learning computer
+            science fundamentals and advanced software engineering, and books to
+            deepen my knowledge in specific subjects. I have chosen the specific
+            courses and texbooks based on recommendations from numerous sources.
+          </p>
         </div>
-      </ul>
-      <div class="curriculum__methodology">
-        <p><strong>Methodology</strong>: I aim for a well-rounded and thorough self-education. I reference <a
-            href="https://roadmap.sh/frontend" class="curriculum__methodology__link" target="_blank"
-            rel="noopener noreferrer">this frontend roadmap</a>, <a href="https://roadmap.sh/backend"
-            class="curriculum__methodology__link" target="_blank" rel="noopener noreferrer">this backend roadmap</a>,
-          and <a href="https://cdn.cs50.net/guide/guide-18.pdf" class="curriculum__methodology__link" target="_blank"
-            rel="noopener noreferrer">Harvard's Unofficial Guide to CS</a> as syllabi to guide me on what topics to
-          cover and the order in which to complete them.</p>
-        <p>Among the various educational resources, each fulfills a purpose based on its strength. I use Udemy for
-          learning the basics of full-stack web development, eDX and Coursera for learning computer science fundamentals
-          and advanced software engineering, and books to deepen my knowledge in specific subjects. I have chosen the
-          specific courses and texbooks based on recommendations from numerous sources.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SKILLS SECTION -->
-  <section class="skills" id="skills">
-    <!-- FRONTEND -->
-    <div class="skills-box">
-      <h4 class="skills-box__header">
-        <svg class="skills-box__header-icon">
-          <use xlink:href="img/sprite.svg#icon-embed2"></use>
-        </svg>
-        Frontend
-      </h4>
-      <ul class="skills-box__list">
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-typescript"></use>
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+      <!-- FRONTEND -->
+      <div class="skills-box">
+        <h4 class="skills-box__header">
+          <svg class="skills-box__header-icon">
+            <use xlink:href="img/sprite.svg#icon-embed2"></use>
           </svg>
-          Typescript
-        </li>
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-javascript"></use>
-          </svg>
-          Javascript ES6+
-        </li>
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-react"></use>
-          </svg>
-          React
-        </li>
-        <!-- <li class="skills-box__item fade-in">
+          Frontend
+        </h4>
+        <ul class="skills-box__list">
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-typescript"></use>
+            </svg>
+            Typescript
+          </li>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-javascript"></use>
+            </svg>
+            Javascript ES6+
+          </li>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-react"></use>
+            </svg>
+            React
+          </li>
+          <!-- <li class="skills-box__item fade-in">
             <svg class="skills-box__icon">
               <use xlink:href="img/sprite.svg#icon-redux"></use>
             </svg>
@@ -276,162 +429,162 @@
             </svg>
             Styled Components
           </li> -->
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-css3"></use>
-          </svg>
-          CSS3
-        </li>
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-html5"></use>
-          </svg>
-          HTML5
-        </li>
-      </ul>
-    </div>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-css3"></use>
+            </svg>
+            CSS3
+          </li>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-html5"></use>
+            </svg>
+            HTML5
+          </li>
+        </ul>
+      </div>
 
-    <!-- BACK-END -->
-    <div class="skills-box">
-      <h4 class="skills-box__header">
-        <svg class="skills-box__header-icon">
-          <use xlink:href="img/sprite.svg#icon-terminal"></use>
-        </svg>
-        Back-End
-      </h4>
-      <ul class="skills-box__list">
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-node-dot-js"></use>
+      <!-- BACK-END -->
+      <div class="skills-box">
+        <h4 class="skills-box__header">
+          <svg class="skills-box__header-icon">
+            <use xlink:href="img/sprite.svg#icon-terminal"></use>
           </svg>
-          Node.js w/ Express.js
-        </li>
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-jest"></use>
-          </svg>
-          Jest
-        </li>
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-ubuntu"></use>
-          </svg>
-          Ubuntu
-        </li>
-        <!-- <li class="skills-box__item fade-in">
+          Back-End
+        </h4>
+        <ul class="skills-box__list">
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-node-dot-js"></use>
+            </svg>
+            Node.js w/ Express.js
+          </li>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-jest"></use>
+            </svg>
+            Jest
+          </li>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-ubuntu"></use>
+            </svg>
+            Ubuntu
+          </li>
+          <!-- <li class="skills-box__item fade-in">
           <svg class="skills-box__icon">
             <use xlink:href="img/sprite.svg#icon-python"></use>
           </svg>
           Python
         </li> -->
-        <!-- <li class="skills-box__item fade-in">
+          <!-- <li class="skills-box__item fade-in">
           <svg class="skills-box__icon">
             <use xlink:href="img/sprite.svg#icon-django"></use>
           </svg>
           Django
         </li> -->
-        <!-- <li class="skills-box__item fade-in">
+          <!-- <li class="skills-box__item fade-in">
           <svg class="skills-box__icon">
             <use xlink:href="img/sprite.svg#icon-flask"></use>
           </svg>
           Flask
         </li> -->
-        <!-- <li class="skills-box__item fade-in">
+          <!-- <li class="skills-box__item fade-in">
           <svg class="skills-box__icon">
             <use xlink:href="img/sprite.svg#icon-graphql"></use>
           </svg>
           GraphQL
         </li> -->
-        <!-- <li class="skills-box__item fade-in">
+          <!-- <li class="skills-box__item fade-in">
           <svg class="skills-box__icon">
             <use xlink:href="img/sprite.svg#icon-c"></use>
           </svg>
         </li> -->
-        <!-- <li class="skills-box__item fade-in">
+          <!-- <li class="skills-box__item fade-in">
           <svg class="skills-box__icon">
             <use xlink:href="img/sprite.svg#icon-nginx"></use>
           </svg>
           Nginx
         </li> -->
-      </ul>
-    </div>
+        </ul>
+      </div>
 
-    <!-- DATABASE -->
-    <div class="skills-box">
-      <h4 class="skills-box__header">
-        <svg class="skills-box__header-icon">
-          <use xlink:href="img/sprite.svg#icon-database"></use>
-        </svg>
-        Database
-      </h4>
-      <ul class="skills-box__list">
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-mysql"></use>
+      <!-- DATABASE -->
+      <div class="skills-box">
+        <h4 class="skills-box__header">
+          <svg class="skills-box__header-icon">
+            <use xlink:href="img/sprite.svg#icon-database"></use>
           </svg>
-          MySQL
-        </li>
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-mongodb"></use>
-          </svg>
-          MongoDB
-        </li>
-        <!-- <li class="skills-box__item fade-in">
+          Database
+        </h4>
+        <ul class="skills-box__list">
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-mysql"></use>
+            </svg>
+            MySQL
+          </li>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-mongodb"></use>
+            </svg>
+            MongoDB
+          </li>
+          <!-- <li class="skills-box__item fade-in">
           <svg class="skills-box__icon">
             <use xlink:href="img/sprite.svg#icon-postgresql"></use>
           </svg>
           PostgreSQL
         </li> -->
-        <!-- <li class="skills-box__item fade-in">
+          <!-- <li class="skills-box__item fade-in">
           <svg class="skills-box__icon">
             <use xlink:href="img/sprite.svg#icon-elasticsearch"></use>
           </svg>
           Elasticsearch
         </li> -->
-        <!-- <li class="skills-box__item fade-in">
+          <!-- <li class="skills-box__item fade-in">
           <svg class="skills-box__icon">
             <use xlink:href="img/sprite.svg#icon-kibana"></use>
           </svg>
           Kibana
         </li> -->
-        <!-- <li class="skills-box__item fade-in">
+          <!-- <li class="skills-box__item fade-in">
             <svg class="skills-box__icon">
               <use xlink:href="img/sprite.svg#icon-neo4j"></use>
             </svg>
             Neo4j
           </li> -->
-        <!-- <li class="skills-box__item fade-in">
+          <!-- <li class="skills-box__item fade-in">
           <svg class="skills-box__icon">
             <use xlink:href="img/sprite.svg#icon-redis"></use>
           </svg>
           Redis
         </li> -->
-      </ul>
-    </div>
+        </ul>
+      </div>
 
-    <!-- PRODUCTION -->
-    <div class="skills-box">
-      <h4 class="skills-box__header">
-        <svg class="skills-box__header-icon">
-          <use xlink:href="img/sprite.svg#icon-cloud-upload"></use>
-        </svg>
-        Production
-      </h4>
-      <ul class="skills-box__list">
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-amazonaws"></use>
+      <!-- PRODUCTION -->
+      <div class="skills-box">
+        <h4 class="skills-box__header">
+          <svg class="skills-box__header-icon">
+            <use xlink:href="img/sprite.svg#icon-cloud-upload"></use>
           </svg>
-          SQS, SNS, Lambda, API Gateway, S3, DynamoDB, RDS, Elasticache, EC2
-        </li>
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-docker"></use>
-          </svg>
-          Docker
-        </li>
-        <!-- <li class="skills-box__item fade-in">
+          Production
+        </h4>
+        <ul class="skills-box__list">
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-amazonaws"></use>
+            </svg>
+            SQS, SNS, Lambda, API Gateway, S3, DynamoDB, RDS, Elasticache, EC2
+          </li>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-docker"></use>
+            </svg>
+            Docker
+          </li>
+          <!-- <li class="skills-box__item fade-in">
           <svg class="skills-box__icon">
             <use xlink:href="img/sprite.svg#icon-kubernetes"></use>
           </svg>
@@ -467,76 +620,134 @@
           </svg>
           Splunk
         </li> -->
-        <li class="skills-box__item fade-in">
-          <svg class="skills-box__icon">
-            <use xlink:href="img/sprite.svg#icon-git"></use>
-          </svg>
-          Git
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- PROJECTS SECTION -->
-  <section class="projects" id="projects">
-
-    <!-- PROJECT: YelpCamp -->
-    <div class="card">
-      <h4 class="card__heading">YelpCamp</h4>
-      <p class="card__sub-heading">Full-stack web application for exploring and reviewing campgrounds globally.</p>
-      <div class="card__video">
-        <img src="img/Yelp-Camp_App.png" alt="Screenshot of YelpCamp App website" class="card__video-content"
-          loading="lazy">
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-git"></use>
+            </svg>
+            Git
+          </li>
+        </ul>
       </div>
-      <a href="https://yelpcamp-70nc.onrender.com/" class="card__link btn btn--card" target="_blank"
-        rel="noopener noreferrer">Launch</a>
-      <a href="projects/yelpcamp.html" class="card__link btn btn--card">More Info</a>
-    </div>
+    </section>
 
-    <!-- To-Do App -->
-    <div class="card">
-      <h4 class="card__heading">To-Do App</h4>
-      <div class="card__video">
-        <img src="img/To-Do_App.png" alt="Screenshot of To-Do App website" class="card__video-content" loading="lazy">
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+      <!-- PROJECT: YelpCamp -->
+      <div class="card">
+        <h4 class="card__heading">YelpCamp</h4>
+        <p class="card__sub-heading">
+          Full-stack web application for exploring and reviewing campgrounds
+          globally.
+        </p>
+        <div class="card__video">
+          <img
+            src="img/Yelp-Camp_App.png"
+            alt="Screenshot of YelpCamp App website"
+            class="card__video-content"
+            loading="lazy"
+          />
+        </div>
+        <a
+          href="https://yelpcamp-70nc.onrender.com/"
+          class="card__link btn btn--card"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Launch</a
+        >
+        <a href="projects/yelpcamp.html" class="card__link btn btn--card"
+          >More Info</a
+        >
       </div>
-      <a href="https://9kg92.csb.app/" class="card__link btn btn--card" target="_blank"
-        rel="noopener noreferrer">Launch</a>
-      <a href="https://github.com/JavierJu/react-todolist" class="card__link btn btn--card" target="_blank"
-        rel="noopener noreferrer">More Info</a>
-    </div>
 
-    <!-- Note-Taking App -->
-    <div class="card">
-      <h4 class="card__heading">Note-Taking App</h4>
-      <div class="card__video">
-        <img src="img/Note-Taking_App.png" alt="Screenshot of Note-Taking App website" class="card__video-content"
-          loading="lazy">
+      <!-- To-Do App -->
+      <div class="card">
+        <h4 class="card__heading">To-Do App</h4>
+        <div class="card__video">
+          <img
+            src="img/To-Do_App.png"
+            alt="Screenshot of To-Do App website"
+            class="card__video-content"
+            loading="lazy"
+          />
+        </div>
+        <a
+          href="https://9kg92.csb.app/"
+          class="card__link btn btn--card"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Launch</a
+        >
+        <a
+          href="https://github.com/JavierJu/react-todolist"
+          class="card__link btn btn--card"
+          target="_blank"
+          rel="noopener noreferrer"
+          >More Info</a
+        >
       </div>
-      <a href="https://ho9gn.csb.app/" class="card__link btn btn--card" target="_blank"
-        rel="noopener noreferrer">Launch</a>
-      <a href="https://github.com/YOUR_GITHUB_USERNAME/Note-Taking-App" class="card__link btn btn--card" target="_blank"
-        rel="noopener noreferrer">More Info</a>
-    </div>
 
-    <!-- PROJECT: Portfolio -->
-    <div class="card">
-      <h4 class="card__heading">Portfolio</h4>
-      <p class="card__sub-heading">Professional portfolio website to showcase software engineering projects.</p>
-      <div class="card__video">
-        <img src="img/Portfolio_Mainpage.png" alt="Portfolio website of Javier Ju" class="card__video-content"
-          loading="lazy">
+      <!-- Note-Taking App -->
+      <div class="card">
+        <h4 class="card__heading">Note-Taking App</h4>
+        <div class="card__video">
+          <img
+            src="img/Note-Taking_App.png"
+            alt="Screenshot of Note-Taking App website"
+            class="card__video-content"
+            loading="lazy"
+          />
+        </div>
+        <a
+          href="https://ho9gn.csb.app/"
+          class="card__link btn btn--card"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Launch</a
+        >
+        <a
+          href="https://github.com/YOUR_GITHUB_USERNAME/Note-Taking-App"
+          class="card__link btn btn--card"
+          target="_blank"
+          rel="noopener noreferrer"
+          >More Info</a
+        >
       </div>
-      <a href="https://www.javierju.com/" class="card__link btn btn--card" target="_blank"
-        rel="noopener noreferrer">Launch</a>
-      <a href="projects/professional-portfolio.html" class="card__link btn btn--card">More Info</a>
-    </div>
 
-    <!-- Additional Projects -->
-    <!-- <button type="button" class="btn btn--slideToggle">Additional Projects</button>
+      <!-- PROJECT: Portfolio -->
+      <div class="card">
+        <h4 class="card__heading">Portfolio</h4>
+        <p class="card__sub-heading">
+          Professional portfolio website to showcase software engineering
+          projects.
+        </p>
+        <div class="card__video">
+          <img
+            src="img/Portfolio_Mainpage.png"
+            alt="Portfolio website of Javier Ju"
+            class="card__video-content"
+            loading="lazy"
+          />
+        </div>
+        <a
+          href="https://www.javierju.com/"
+          class="card__link btn btn--card"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Launch</a
+        >
+        <a
+          href="projects/professional-portfolio.html"
+          class="card__link btn btn--card"
+          >More Info</a
+        >
+      </div>
+
+      <!-- Additional Projects -->
+      <!-- <button type="button" class="btn btn--slideToggle">Additional Projects</button>
     <div class="projects__extras"> -->
 
-    <!-- Google Homepage -->
-    <!-- <div class="card">
+      <!-- Google Homepage -->
+      <!-- <div class="card">
       <h4 class="card__heading">Google Homepage</h4>
       <div class="card__video">
         <img data-src="img/Google_Homepage.png" src="img/project-placeholder.png"
@@ -548,8 +759,8 @@
         target="_blank" rel="noopener noreferrer">More Info</a>
     </div> -->
 
-    <!-- Simon -->
-    <!-- <div class="card">
+      <!-- Simon -->
+      <!-- <div class="card">
         <h4 class="card__heading">Audio/Visual Game Replica of Simon</h4>
         <div class="card__video">
           <img data-src="img/Simon.png" src="img/project-placeholder.png" alt="Simon website"
@@ -561,8 +772,8 @@
           class="card__link btn btn--card" target="_blank" rel="noopener noreferrer">More Info</a>
       </div> -->
 
-    <!-- Drum Kit -->
-    <!-- <div class="card">
+      <!-- Drum Kit -->
+      <!-- <div class="card">
         <h4 class="card__heading">Audio/Visual Drum Kit</h4>
         <div class="card__video">
           <img data-src="img/Drum Kit.png" src="img/project-placeholder.png" alt="Drum Kit website"
@@ -574,8 +785,8 @@
           target="_blank" rel="noopener noreferrer">More Info</a>
       </div> -->
 
-    <!-- Nexter -->
-    <!-- <div class="card">
+      <!-- Nexter -->
+      <!-- <div class="card">
         <h4 class="card__heading">Home Rental Landing Page</h4>
         <div class="card__video">
           <img data-src="img/Nexter.png" src="img/project-placeholder.png" alt="Nexter website"
@@ -587,8 +798,8 @@
           target="_blank" rel="noopener noreferrer">More Info</a>
       </div> -->
 
-    <!-- Trillo -->
-    <!-- <div class="card">
+      <!-- Trillo -->
+      <!-- <div class="card">
         <h4 class="card__heading">Hotel Listing Page</h4>
         <div class="card__video">
           <img data-src="img/Trillo.png" src="img/project-placeholder.png" alt="Trillo website"
@@ -600,8 +811,8 @@
           target="_blank" rel="noopener noreferrer">More Info</a>
       </div> -->
 
-    <!-- Natours -->
-    <!-- <div class="card">
+      <!-- Natours -->
+      <!-- <div class="card">
         <h4 class="card__heading">Travel Company Landing Page</h4>
         <div class="card__video">
           <img data-src="img/Natours.png" src="img/project-placeholder.png" alt="Natours website"
@@ -613,8 +824,8 @@
           class="card__link btn btn--card" target="_blank" rel="noopener noreferrer">More Info</a>
       </div> -->
 
-    <!-- PROJECT: Data Structures and Algorithms -->
-    <!-- <div class="card">
+      <!-- PROJECT: Data Structures and Algorithms -->
+      <!-- <div class="card">
         <h4 class="card__heading">Data Structures and Algorithms Visualization</h4>
         <h5 class="card__sub-heading">Frontend web application to visualize searching and sorting algorithms in
           real-time
@@ -631,8 +842,8 @@
           Info</a>
       </div> -->
 
-    <!-- PROJECT: Finance -->
-    <!-- <div class="card">
+      <!-- PROJECT: Finance -->
+      <!-- <div class="card">
         <h4 class="card__heading">Wall Street Trader</h4>
         <h5 class="card__sub-heading">Full-stack web application for managing an investment portfolio by "buying" and
           "selling" stocks based on their actual prices (<em>no real financial transactions take place</em>)</h5>
@@ -647,8 +858,8 @@
         <a href="projects/wallstreettrader.html" class="card__link btn btn--card">More Info</a>
       </div> -->
 
-    <!-- PROJECT: Star Wars -->
-    <!-- <div class="card">
+      <!-- PROJECT: Star Wars -->
+      <!-- <div class="card">
         <h4 class="card__heading">Star Wars 3D Models and Blueprints</h4>
         <h5 class="card__sub-heading">Frontend website to view and interact with 3D Models and Blueprints of various
           starships from the Star Wars universe</h5>
@@ -660,25 +871,27 @@
           rel="noopener noreferrer">Launch</a>
         <a href="projects/star-wars-3d-models-and-blueprints.html" class="card__link btn btn--card">More Info</a>
       </div> -->
+    </section>
 
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section class="contact" id="contact">
-
-    <!-- ONLINE PROFILE -->
-    <figure class="online-profile">
-      <h4 class="online-profile__header">Online Profile</h4>
-      <div class="online-profile__icon-box">
-        <a href="https://github.com/JavierJu" class="online-profile__link" aria-label="GitHub Profile" target="_blank"
-          rel="noopener noreferrer">
-          <svg class="online-profile__icon">
-            <use xlink:href="img/sprite.svg#icon-github"></use>
-          </svg>
-        </a>
-      </div>
-      <!-- <div class="online-profile__icon-box">
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <!-- ONLINE PROFILE -->
+      <figure class="online-profile">
+        <h4 class="online-profile__header">Online Profile</h4>
+        <div class="online-profile__icon-box">
+          <a
+            href="https://github.com/JavierJu"
+            class="online-profile__link"
+            aria-label="GitHub Profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="online-profile__icon">
+              <use xlink:href="img/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- <div class="online-profile__icon-box">
         <a href="https://codepen.io/JavierJu" class="online-profile__link" aria-label="link to my codepen account"
           target="_blank" rel="noopener noreferrer">
           <svg class="online-profile__icon">
@@ -686,15 +899,20 @@
           </svg>
         </a>
       </div> -->
-      <div class="online-profile__icon-box">
-        <a href="https://www.linkedin.com/in/kwanghyun-ju/" class="online-profile__link" aria-label="LinkedIn Profile"
-          target="_blank" rel="noopener noreferrer">
-          <svg class="online-profile__icon">
-            <use xlink:href="img/sprite.svg#icon-linkedin"></use>
-          </svg>
-        </a>
-      </div>
-      <!-- <div class="online-profile__icon-box">
+        <div class="online-profile__icon-box">
+          <a
+            href="https://www.linkedin.com/in/kwanghyun-ju/"
+            class="online-profile__link"
+            aria-label="LinkedIn Profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="online-profile__icon">
+              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- <div class="online-profile__icon-box">
         <a href="https://angel.co/u/jacob-grisham" class="online-profile__link"
           aria-label="link to my angellist account" target="_blank" rel="noopener noreferrer">
           <svg class="online-profile__icon">
@@ -702,32 +920,41 @@
           </svg>
         </a>
       </div> -->
-    </figure>
+      </figure>
 
-    <!-- EMAIL -->
-    <figure class="email">
-      <h4 class="email__header">Email</h4>
-      <div class="email__icon-box">
-        <a href="mailto:boswkd@gmail.com" class="email__link" aria-label="Send an email to Javier Ju">
-          <svg class="email__icon">
-            <use xlink:href="img/sprite.svg#icon-gmail"></use>
-          </svg>
-        </a>
-      </div>
-    </figure>
+      <!-- EMAIL -->
+      <figure class="email">
+        <h4 class="email__header">Email</h4>
+        <div class="email__icon-box">
+          <a
+            href="mailto:boswkd@gmail.com"
+            class="email__link"
+            aria-label="Send an email to Javier Ju"
+          >
+            <svg class="email__icon">
+              <use xlink:href="img/sprite.svg#icon-gmail"></use>
+            </svg>
+          </a>
+        </div>
+      </figure>
 
-    <!-- SOCIAL MEDIA -->
-    <figure class="social-media">
-      <h4 class="social-media__header">Devlog</h4>
-      <div class="social-media__icon-box">
-        <a href="https://javierju.github.io" class="social-media__link" aria-label="Visit Javier Ju's Devlog"
-          target="_blank" rel="noopener noreferrer">
-          <svg class="social-media__icon">
-            <use xlink:href="img/sprite.svg#icon-github"></use>
-          </svg>
-        </a>
-      </div>
-      <!-- <div class="social-media__icon-box">
+      <!-- SOCIAL MEDIA -->
+      <figure class="social-media">
+        <h4 class="social-media__header">Devlog</h4>
+        <div class="social-media__icon-box">
+          <a
+            href="https://javierju.github.io"
+            class="social-media__link"
+            aria-label="Visit Javier Ju's Devlog"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-media__icon">
+              <use xlink:href="img/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- <div class="social-media__icon-box">
         <a href="https://www.youtube.com/channel/UCMZ0FRVeMKaoxF7RWKLVSow?view_as=subscriber" class="social-media__link"
           aria-label="link to my YouTube account" target="_blank" rel="noopener noreferrer">
           <svg class="social-media__icon">
@@ -735,22 +962,23 @@
           </svg>
         </a>
       </div> -->
-    </figure>
+      </figure>
+    </section>
 
-  </section>
+    <!-- <div id="fb-root"></div> -->
 
-  <!-- <div id="fb-root"></div> -->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer__fun-note">For my lovely wife and son in Japan ❤️</p>
+      <p>Copyright &copy; <time id="date"></time> by Javier Ju</p>
+    </footer>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p class="footer__fun-note">For my lovely wife and son in Japan ❤️</p>
-    <p>Copyright &copy; <time id="date"></time> by Javier Ju</p>
-  </footer>
-
-  <!-- JavaScript -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6153GNV2FE"></script>
-  <script defer src="js/app.js"></script>
-</body>
-
+    <!-- JavaScript -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6153GNV2FE"
+    ></script>
+    <script defer src="js/app.js"></script>
+  </body>
 </html>

@@ -1,12 +1,17 @@
-@use "abstract/variables";
-@use "abstract/mixins";
+@use 'abstract/variables';
+@use 'abstract/mixins';
 
 #index {
   display: grid;
-  grid-template-rows: [header-start] 100vh [header-end bio-start] minmax(min-content, max-content) [bio-end skills-start] minmax(min-content, max-content) [skills-end project-start] minmax(min-content, max-content) [project-end contact-start] minmax(min-content, max-content) [contact-end footer-start] max-content [footer-end];
+  grid-template-rows:
+    [header-start] 100vh [header-end bio-start] minmax(min-content, max-content)
+    [bio-end skills-start] minmax(min-content, max-content)
+    [skills-end project-start] minmax(min-content, max-content)
+    [project-end contact-start] minmax(min-content, max-content)
+    [contact-end footer-start] max-content [footer-end];
 }
 
-// BIO SECTION //  
+// BIO SECTION //
 .bio {
   grid-row: bio-start / bio-end;
   display: grid;

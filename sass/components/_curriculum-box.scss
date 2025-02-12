@@ -1,10 +1,9 @@
-@use "abstract/variables";
+@use 'abstract/variables';
 
 .curriculum {
   // Associated code in _home.scss
 
   &__methodology__link {
-
     &:link,
     &:visited {
       text-decoration: underline;
@@ -61,7 +60,6 @@
       }
     }
   }
-
 
   &__header {
     text-align: center;

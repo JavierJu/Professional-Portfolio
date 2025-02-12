@@ -1,5 +1,5 @@
-@use "abstract/variables";
-@use "abstract/mixins";
+@use 'abstract/variables';
+@use 'abstract/mixins';
 
 .projects-body {
   @include mixins.blog-and-project-formatting;
