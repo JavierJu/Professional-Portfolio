@@ -67,11 +67,13 @@ Copyright Notice and Statement: currently [**not** offering any license](https:/
 
 - Chrome DevTools로 검토 완료
 
+10. github action 개선
+
+- sass 파일 변경 시 npm run build 자동 실행 후 style.css 커밋하고 push/배포
+
 ---
 
 추가 예정
-
-github action 개선 - sass 파일 변경 시 npm run build 자동 실행 후 style.css 커밋하고 push/배포
 
 package.json 코드 개선 및 불필요한 npm, dependancy 삭제
 
