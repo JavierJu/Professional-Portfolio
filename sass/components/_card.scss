@@ -29,7 +29,8 @@
   &__sub-heading {
     grid-column: 1 / -1;
     font-weight: 200;
-    font-size: variables.$sub-header-font-size;
+    font-size: 1.6rem;
+    text-align: center;
   }
 
   &__video {
