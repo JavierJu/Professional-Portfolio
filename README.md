@@ -71,11 +71,13 @@ Copyright Notice and Statement: currently [**not** offering any license](https:/
 
 - sass 파일 변경 시 npm run build 자동 실행 후 style.css 커밋하고 push/배포
 
+11. package.json 코드 개선
+
+- 불필요한 npm, dependancy 삭제
+
 ---
 
 추가 예정
-
-package.json 코드 개선 및 불필요한 npm, dependancy 삭제
 
 1️⃣ CloudFront 캐싱 최적화
 CloudFront에서 캐싱 정책을 적절히 설정했는지 확인! (Cache-Control 헤더 활용)
