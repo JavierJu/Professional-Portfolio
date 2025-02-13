@@ -18,17 +18,16 @@
   "private": true,
   "homepage": "https://www.javierju.com",
   "scripts": {
-    "start": "node server.js",
-    "watch:sass": "sass --watch sass/main.scss:css/style.css --load-path=sass",
-    "compile:sass": "sass --load-path=sass sass/main.scss css/style.compile.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.compile.css -o css/style.prefix.css",
-    "compress:css": "sass css/style.prefix.css css/style.css --style=compressed",
-    "dev": "npm-run-all --parallel watch:sass",
-    "build": "npm-run-all compile:sass prefix:css compress:css",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
-  },
+  "start": "node server.js",
+  "watch:sass": "sass --watch sass/main.scss:public/css/style.css --load-path=sass",
+  "compile:sass": "sass --load-path=sass sass/main.scss public/css/style.css --style=expanded",
+  "prefix:css": "postcss public/css/style.css --use autoprefixer -b 'last 10 versions' --map -o public/css/style.css",
+  "dev": "npm-run-all --parallel watch:sass",
+  "build": "npm-run-all compile:sass prefix:css",
+  "lint": "eslint .",
+  "lint:fix": "eslint . --fix",
+  "format": "prettier --write ."
+},
   "devDependencies": {
     "@eslint/js": "^9.20.0",
     "autoprefixer": "^10.4.20",
