@@ -38,7 +38,7 @@ jobs:
       - name: Check if SASS Files Changed
         id: sass_check
         run: |
-          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.scss$'; then
+          if git diff --name-only --relative ${{ github.event.before }} ${{ github.sha }} | grep -E 'sass/.*\.scss$'; then
             echo "sass_changed=true" >> $GITHUB_ENV
           else
             echo "sass_changed=false" >> $GITHUB_ENV
