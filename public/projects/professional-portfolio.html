@@ -8,7 +8,7 @@
     <meta name="author" content="Javier Ju" />
     <meta
       name="description"
-      content="Discover the portfolio of Javier Ju, a full-stack developer specializing in JavaScript, React, and AWS. Explore projects and technical expertise."
+      content="Explore the portfolio of Javier Ju, a full-stack developer specializing in JavaScript, React, and AWS. Discover projects, technical expertise, and deployment strategies."
     />
 
     <!-- Open Graph / Facebook -->
@@ -30,7 +30,7 @@
     <meta property="og:image:height" content="630" />
     <meta
       property="og:description"
-      content="Discover the portfolio of Javier Ju, a full-stack developer specializing in JavaScript, React, and AWS. Explore projects and technical expertise."
+      content="Explore the portfolio of Javier Ju, a full-stack developer specializing in JavaScript, React, and AWS. Discover projects, technical expertise, and deployment strategies."
     />
 
     <!-- Twitter Meta Tags -->
@@ -42,7 +42,7 @@
     />
     <meta
       name="twitter:description"
-      content="Discover the portfolio of Javier Ju, a full-stack developer specializing in JavaScript, React, and AWS. Explore projects and technical expertise."
+      content="Explore the portfolio of Javier Ju, a full-stack developer specializing in JavaScript, React, and AWS. Discover projects, technical expertise, and deployment strategies."
     />
     <meta
       name="twitter:image"
@@ -126,9 +126,7 @@
       <section>
         <h2 class="projects-body__heading">Project Overview</h2>
         <p>
-          This portfolio is designed to showcase my projects and technical
-          expertise. The site was initially developed using HTML, Sass, and
-          JavaScript, with later optimizations for performance and SEO.
+          This portfolio showcases my projects, technical expertise, and deployment strategies. The site was initially built as a static page but has been enhanced with Express.js for better functionality and is now deployed on AWS S3 with CloudFront.
         </p>
       </section>
 
@@ -139,87 +137,35 @@
         <div>
           <h3>Frontend</h3>
           <ul class="projects-body__list">
-            <li>HTML5</li>
-            <li>Sass (CSS Preprocessor)</li>
+            <li>HTML5, Sass</li>
             <li>JavaScript (ES6+)</li>
           </ul>
         </div>
         <div>
-          <h3>Development Tools</h3>
+          <h3>Backend & DevOps</h3>
           <ul class="projects-body__list">
-            <li>Git & GitHub</li>
-            <li>Codacy / CodeClimate</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Deployment</h3>
-          <ul class="projects-body__list">
+            <li>Express.js</li>
             <li>AWS S3 + CloudFront</li>
             <li>AWS Route 53 Domains</li>
           </ul>
         </div>
         <div>
-          <h3>Performance & Analytics</h3>
+          <h3>Development & CI/CD</h3>
           <ul class="projects-body__list">
-            <li>Google Lighthouse</li>
-            <li>Google Analytics</li>
+            <li>GitHub Actions (Auto Deployment, Cache Invalidation)</li>
+            <li>ESLint & Prettier for Code Quality</li>
           </ul>
         </div>
       </section>
 
-      <!-- DESIGN AND ARCHITECTURE -->
       <section>
-        <h2 class="projects-body__heading">Architecture & Design</h2>
-        <p>
-          Initially, the site was built with an Express.js backend, but later
-          refactored to a static site architecture using HTML and JavaScript,
-          hosted on AWS S3. This resulted in significant performance
-          improvements.
-        </p>
-        <!-- <div>
-        <img src="../img/Portfolio-Production-Architecture.drawio.svg" alt="Portfolio Production Architecture"
-          class="projects-body__image-smaller projects-body__paragraph-spacing-below">
-      </div> -->
-      </section>
-
-      <!-- UX/UI DESIGN -->
-      <section>
-        <h2 class="projects-body__heading">UX/UI Considerations</h2>
-        <p>
-          The design was optimized for responsiveness using a mobile-first
-          approach. Custom SVG assets were used for icons, and lazy-loading
-          techniques were implemented to improve performance.
-        </p>
-      </section>
-
-      <!-- PRODUCTION METRICS -->
-      <section>
-        <h2 class="projects-body__heading">Performance & Metrics</h2>
+        <h2 class="projects-body__heading">Enhancements & Optimizations</h2>
         <ul class="projects-body__list">
-          <li><strong>Hosting:</strong> Deployed AWS S3 + CloudFront</li>
-          <li>
-            <strong>SEO:</strong> Google PageRank #1 for "Javier Ju Portfolio"
-          </li>
-          <li>
-            <strong>Performance:</strong> Lighthouse score improved from 12 → 88
-          </li>
-          <li>
-            <strong>Security:</strong> Mozilla Observatory grade improved from F
-            → B-
-          </li>
-        </ul>
-      </section>
-
-      <!-- LESSONS LEARNED -->
-      <section>
-        <h2 class="projects-body__heading">Lessons Learned</h2>
-        <ul class="projects-body__list">
-          <li>
-            Refactoring from Express.js backend to a static site improved
-            performance significantly
-          </li>
-          <li>SEO optimization with Open Graph & Google Lighthouse</li>
-          <li>GitHub & CI/CD pipeline setup for automated deployments</li>
+          <li>Refactored project structure and organized static files into a `public` folder</li>
+          <li>Integrated Express.js to serve static files and enable HTTPS redirection</li>
+          <li>Deployed the site using AWS S3, CloudFront, and Route 53</li>
+          <li>Set up CI/CD with GitHub Actions for automated deployment and cache invalidation</li>
+          <li>Improved Lighthouse scores (Performance: 75, Accessibility: 98, SEO: 92)</li>
         </ul>
       </section>
     </main>
