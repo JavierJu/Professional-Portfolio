@@ -13,6 +13,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22' # Node.js 버전 설정 (프로젝트에 맞게 조정)
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Lint Check
+        run: npm run lint
+
+      - name: Auto-fix Lint Issues
+        run: npm run lint:fix
+
+      - name: Format Code
+        run: npm run format
+
+      - name: Build Project
+        run: npm run build
+
       - name: Configure AWS CLI
         run: |
           aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
