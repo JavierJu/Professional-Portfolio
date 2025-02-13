@@ -95,7 +95,7 @@
 
   @media only screen and (max-width: variables.$bp-laptop) {
     grid-template-columns: min-content;
-    grid-template-rows: min-content repeat(4, 1fr);
+    grid-template-rows: min-content repeat(3, 1fr);
     justify-content: center;
     gap: 2rem 0;
   }
