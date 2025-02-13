@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # 푸시 권한 부여
+          fetch-depth: 0 # 모든 커밋을 가져옴 (HEAD~1을 사용할 수 있게 함)
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -38,7 +38,7 @@ jobs:
       - name: Check if SASS Files Changed
         id: sass_check
         run: |
-          if git diff --name-only --diff-filter=AMR HEAD~1 HEAD | grep -E 'sass/.*\.scss$'; then
+          if git diff --name-only --diff-filter=AMR HEAD^ HEAD | grep -E 'sass/.*\.scss$'; then
             echo "sass_changed=true" >> $GITHUB_ENV
           else
             echo "sass_changed=false" >> $GITHUB_ENV
