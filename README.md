@@ -57,7 +57,7 @@ Copyright Notice and Statement: currently [**not** offering any license](https:/
 
 7. 코드 품질 분석
 
-- ESLint + Prettier 적용 (Github Action에서 npm run lint, npm run lint:fix, npm rub format, npm run build를 추가)
+- ESLint + Prettier 적용 (Github Action에서 npm run lint, npm run lint:fix, npm run format를 추가)
 
 8. CI/CD
 
@@ -67,7 +67,7 @@ Copyright Notice and Statement: currently [**not** offering any license](https:/
 
 - Chrome DevTools로 검토 완료
 
-10. github action 개선
+10. CI/CD 자동화(github action 개선)
 
 - sass 파일 변경 시 npm run build 자동 실행 후 style.css 커밋하고 push/배포
 
