@@ -65,13 +65,15 @@ Copyright Notice and Statement: currently [**not** offering any license](https:/
 
 9. 크로스 브라우징 & 디바이스 테스트 완료
 
-- Chrome DevTools로 검토 완료료
+- Chrome DevTools로 검토 완료
 
 ---
 
 추가 예정
 
-sass 개선
+github action 개선 - sass 파일 변경 시 npm run build 자동 실행 후 style.css 커밋하고 push/배포
+
+package.json 코드 개선 및 불필요한 npm, dependancy 삭제
 
 1️⃣ CloudFront 캐싱 최적화
 CloudFront에서 캐싱 정책을 적절히 설정했는지 확인! (Cache-Control 헤더 활용)
@@ -86,7 +88,5 @@ SEO 92
 
 콘솔에러 해결
 Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies.
-
-기술 스택 부분 하단 공백 줄이기
 
 깃허브 액션(Github Action) ↔︎ AWS 인증 OpenID Connect 구성
