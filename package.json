@@ -20,8 +20,8 @@
   "scripts": {
   "start": "node server.js",
   "watch:sass": "sass --watch sass/main.scss:public/css/style.css --load-path=sass",
-  "compile:sass": "sass --load-path=sass sass/main.scss public/css/style.css --style=expanded --source-map  --no-embed-source-map",
-  "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.css -o public/css/style.css",
+  "compile:sass": "sass --load-path=sass sass/main.scss public/css/style.css --style=expanded",
+  "prefix:css": "postcss public/css/style.css --use autoprefixer -b 'last 10 versions' --map -o public/css/style.css",
   "dev": "npm-run-all --parallel watch:sass",
   "build": "npm-run-all compile:sass prefix:css",
   "lint": "eslint .",
