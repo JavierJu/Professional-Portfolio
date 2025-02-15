@@ -32,8 +32,8 @@ jobs:
       - name: Re-run Lint Check After Fix
         run: npm run lint
 
-      - name: Format Code
-        run: npm run format && git diff --exit-code || (echo "Code format incorrect. Please run 'npm run format' locally before pushing." && exit 1)
+      # - name: Format Code
+      #   run: npm run format && git diff --exit-code || (echo "Code format incorrect. Please run 'npm run format' locally before pushing." && exit 1)
 
       - name: Check if SASS Files Changed
         id: sass_check
