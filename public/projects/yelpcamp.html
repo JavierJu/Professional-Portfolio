@@ -1,255 +1,195 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Basic Meta Tags -->
-    <title>YelpCamp - Full-Stack Web App Walkthrough</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Javier Ju" />
-    <meta
-      name="description"
-      content="YelpCamp is a full-stack web app for discovering and reviewing campgrounds. Built with Node.js, Express, and MongoDB."
-    />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://www.javierju.com/projects/yelpcamp.html"
-    />
-    <meta property="og:title" content="YelpCamp - Full-Stack Web App" />
-    <meta
-      property="og:image"
-      content="https://www.javierju.com/img/Yelp-Camp_App.png"
-    />
-    <meta property="og:image:alt" content="Screenshot of YelpCamp web app" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta
-      property="og:description"
-      content="YelpCamp is a full-stack web app that allows users to discover and review campgrounds. Built with Node.js, Express, and MongoDB."
-    />
+<head>
+  <!-- Basic Meta Tags -->
+  <title>YelpCamp - Full-Stack Web App Walkthrough</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Javier Ju" />
+  <meta name="description"
+    content="YelpCamp is a full-stack web app for discovering and reviewing campgrounds. Built with Node.js, Express, and MongoDB." />
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:url"
-      content="https://www.javierju.com/projects/yelpcamp.html"
-    />
-    <meta name="twitter:title" content="YelpCamp - Full-Stack Web App" />
-    <meta
-      name="twitter:description"
-      content="YelpCamp is a full-stack web app that allows users to discover and review campgrounds. Built with Node.js, Express, and MongoDB."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.javierju.com/img/Yelp-Camp_App.png"
-    />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.javierju.com/projects/yelpcamp.html" />
+  <meta property="og:title" content="YelpCamp - Full-Stack Web App" />
+  <meta property="og:image" content="https://www.javierju.com/img/Yelp-Camp_App.png" />
+  <meta property="og:image:alt" content="Screenshot of YelpCamp web app" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:description"
+    content="YelpCamp is a full-stack web app that allows users to discover and review campgrounds. Built with Node.js, Express, and MongoDB." />
 
-    <!-- SEO -->
-    <link
-      rel="canonical"
-      href="https://www.javierju.com/projects/yelpcamp.html"
-    />
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.javierju.com/projects/yelpcamp.html" />
+  <meta name="twitter:title" content="YelpCamp - Full-Stack Web App" />
+  <meta name="twitter:description"
+    content="YelpCamp is a full-stack web app that allows users to discover and review campgrounds. Built with Node.js, Express, and MongoDB." />
+  <meta name="twitter:image" content="https://www.javierju.com/img/Yelp-Camp_App.png" />
 
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
-      rel="stylesheet"
-    />
+  <!-- SEO -->
+  <link rel="canonical" href="https://www.javierju.com/projects/yelpcamp.html" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../favicon_io/favicon-16x16.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../favicon_io/apple-touch-icon.png"
-    />
-    <link rel="manifest" href="../site.webmanifest" />
-  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
 
-  <body class="projects-body">
-    <!-- Loader -->
-    <div class="loader"></div>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+</head>
 
-    <!-- Main Content -->
-    <main class="projects-body__focus-container">
-      <!-- HEADER -->
-      <section class="project-header">
-        <h1 class="projects-body__main-heading">
-          YelpCamp - Full-Stack Web App
-        </h1>
-        <h2 class="blog-body__sub-heading">March - June 2025</h2>
+<body class="projects-body">
+  <!-- Loader -->
+  <div class="loader"></div>
 
-        <div class="project-links">
-          <h2 class="projects-body__heading">
-            Source Code
-            <a
-              href="https://github.com/JavierJu/YelpCamp"
-              aria-label="GitHub repository for YelpCamp"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="skills-box__header-icon">
-                <use xlink:href="../img/sprite.svg#icon-github"></use>
-              </svg>
-            </a>
-          </h2>
-        </div>
+  <!-- Main Content -->
+  <main class="projects-body__focus-container">
+    <!-- HEADER -->
+    <section class="project-header">
+      <h1 class="projects-body__main-heading">
+        YelpCamp - Full-Stack Web App
+      </h1>
+      <h2 class="blog-body__sub-heading">Dec 2024 - Feb 2025</h2>
 
-        <div>
-          <img
-            src="../img/Yelp-Camp_App.png"
-            class="projects-body__image"
-            alt="YelpCamp Screenshot"
-          />
-        </div>
-      </section>
+      <div class="project-links">
+        <h2 class="projects-body__heading">
+          Source Code
+          <a href="https://github.com/JavierJu/YelpCamp" aria-label="GitHub repository for YelpCamp" target="_blank"
+            rel="noopener noreferrer">
+            <svg class="skills-box__header-icon">
+              <use xlink:href="../img/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+        </h2>
+      </div>
 
-      <!-- ABOUT -->
-      <section class="project-overview">
-        <h2 class="projects-body__heading">Project Overview</h2>
-        <p>
-          YelpCamp is a full-stack web application for users to discover and
-          review campgrounds. The platform includes user authentication,
-          authorization, and CRUD functionality for campgrounds and reviews. The
-          project was built during a Udemy bootcamp as an introduction to
-          full-stack development.
-        </p>
-        <br />
-        <p>
-          The platform now includes improved authentication, a new search
-          functionality, optimized security measures, and an enhanced UI/UX
-          experience. The project follows an MVC structure with Express.js,
-          MongoDB Atlas, and Cloudinary for image hosting.
-        </p>
-      </section>
+      <div>
+        <img src="../img/Yelp-Camp_App.png" class="projects-body__image" alt="YelpCamp Screenshot" />
+      </div>
+    </section>
 
-      <!-- TECHNOLOGY STACK -->
-      <section class="technologies">
-        <h2 class="projects-body__heading technologies__header">Tech Stack</h2>
+    <!-- ABOUT -->
+    <section class="project-overview">
+      <h2 class="projects-body__heading">Project Overview</h2>
+      <p>
+        YelpCamp is a full-stack web application that allows users to discover, review, and manage campgrounds.
+        The platform includes user authentication, authorization, and CRUD functionality for campgrounds and reviews.
+        Originally built during a Udemy bootcamp, the project has evolved significantly with improved security,
+        a refined search experience, and an optimized deployment strategy.
+      </p>
+      <br />
+      <p>
+        The latest version features <strong>AWS-powered deployment</strong>, <strong>GitHub Actions for CI/CD
+          automation</strong>,
+        enhanced security measures, and a more scalable architecture.
+        YelpCamp follows an MVC structure utilizing <strong>Express.js</strong>,
+        <strong>MongoDB Atlas</strong>, <strong>Cloudinary for image hosting</strong>,
+        and a fully integrated <strong>AWS infrastructure</strong> for hosting and performance optimization.
 
-        <div>
-          <h3>Frontend</h3>
-          <ul class="projects-body__list">
-            <li>HTML5</li>
-            <li>CSS3 / Bootstrap</li>
-            <li>JavaScript (ES6+)</li>
-          </ul>
-        </div>
+      </p>
+    </section>
 
-        <div>
-          <h3>Backend</h3>
-          <ul class="projects-body__list">
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>EJS (Templating)</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>Database</h3>
-          <ul class="projects-body__list">
-            <li>MongoDB (Atlas)</li>
-          </ul>
-        </div>
-
-        <!-- <div>
-          <h3>Testing</h3>
-          <ul class="projects-body__list">
-            <li>Jest</li>
-            <li>Google Lighthouse</li>
-          </ul>
-        </div> -->
-
-        <div>
-          <h3>Deployment</h3>
-          <ul class="projects-body__list">
-            <li>Render</li>
-            <!-- <li>Cloudflare</li> -->
-            <!-- <li>CircleCI</li> -->
-          </ul>
-        </div>
-
-        <div>
-          <h3>Development</h3>
-          <ul class="projects-body__list">
-            <li>Git & GitHub</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- KEY FEATURES -->
-      <section>
-        <h2 class="projects-body__heading">Key Features</h2>
+    <!-- TECHNOLOGY STACK -->
+    <section class="technologies">
+      <h2 class="projects-body__heading technologies__header">Tech Stack</h2>
+      <div>
+        <h3>Frontend</h3>
         <ul class="projects-body__list">
-          <li>User authentication & authorization</li>
-          <li>CRUD functionality for campgrounds and reviews</li>
-          <li>Interactive Cluster Map for campground locations</li>
-          <li>Responsive UI with Bootstrap</li>
+          <li>HTML5</li>
+          <li>CSS3 / Bootstrap</li>
+          <li>JavaScript (ES6+)</li>
         </ul>
-      </section>
+      </div>
 
-      <section>
-        <h2 class="projects-body__heading">Enhancements & Updates (v1.1.0)</h2>
+      <div>
+        <h3>Backend</h3>
         <ul class="projects-body__list">
-          <li>
-            🚀 <strong>Refactored Backend Code:</strong> Middleware and database
-            connections modularized
-          </li>
-          <li>
-            🔎 <strong>Implemented Search Functionality:</strong> MongoDB text
-            index for campground title & description
-          </li>
-          <li>
-            🖼️ <strong>Default Images for Listings:</strong> Ensures all
-            campgrounds have images
-          </li>
-          <li>
-            🔖 <strong>Added Favicon:</strong> Integrated favicon into
-            `/public/favicon` and partials
-          </li>
-          <li>
-            📝 <strong>Added Creation & Update Timestamps:</strong> Displayed in
-            campgrounds and reviews
-          </li>
-          <li>
-            ⭐ <strong>Review System Improvements:</strong> Displayed total
-            reviews, average rating, latest reviews first
-          </li>
-          <li>
-            🖼️ <strong>Enhanced UI:</strong> Added user icons to reviews and
-            campground icons in the home list
-          </li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>EJS (Templating)</li>
         </ul>
-      </section>
-    </main>
+      </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p class="footer__fun-note">For my lovely wife and son in Japan ❤️</p>
-      <p>Copyright &copy; <time id="date"></time> by Javier Ju</p>
-    </footer>
+      <div>
+        <h3>Database</h3>
+        <ul class="projects-body__list">
+          <li>MongoDB (Atlas)</li>
+        </ul>
+      </div>
 
-    <!-- JavaScript -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-6153GNV2FE"
-    ></script>
-    <script defer src="../js/app.js"></script>
-  </body>
+      <div>
+        <h3>Deployment & Infrastructure</h3>
+        <ul class="projects-body__list">
+          <li>AWS EC2 (Nginx) + ELB/CloudFront</li>
+          <li>GitHub Actions (CI/CD Automation)</li>
+          <li>Route 53 (Domain Management)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Development</h3>
+        <ul class="projects-body__list">
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KEY FEATURES -->
+    <section>
+      <h2 class="projects-body__heading">Key Features</h2>
+      <ul class="projects-body__list">
+        <li>User authentication & authorization</li>
+        <li>CRUD functionality for campgrounds and reviews</li>
+        <li>Interactive Cluster Map for campground locations</li>
+        <li>Responsive UI with Bootstrap</li>
+        <li>Secure Image Upload & Storage with Cloudinary</li>
+        <li>Scalable AWS Infrastructure for performance optimization</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="projects-body__heading">Enhancements & Updates (v1.3.0)</h2>
+      <ul class="projects-body__list">
+        <li>
+          🚀 <strong>AWS-Powered Deployment:</strong> EC2, Nginx, ELB, and CloudFront integration for enhanced
+          performance
+        </li>
+        <li>
+          🤖 <strong>CI/CD Automation:</strong> GitHub Actions now automates deployment to AWS EC2
+        </li>
+        <li>
+          🔐 <strong>Security Enhancements:</strong> Improved authentication, ACL policies, and HTTPS support
+        </li>
+        <li>
+          🌍 <strong>Sitemap & SEO Optimization:</strong> Automatically generated sitemap, integrated with Google Search
+          Console
+        </li>
+        <li>
+          🔎 <strong>Improved Search Functionality:</strong> MongoDB text index for campground title & description
+        </li>
+        <li>
+          🖼️ <strong>Enhanced UI:</strong> Redesigned layout for better user experience and mobile responsiveness
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer__fun-note">For my lovely wife and son in Japan ❤️</p>
+    <p>Copyright &copy; <time id="date"></time> by Javier Ju</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6153GNV2FE"></script>
+  <script defer src="../js/app.js"></script>
+</body>
+
 </html>
