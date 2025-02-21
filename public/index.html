@@ -30,11 +30,32 @@
   <!-- SEO -->
   <link rel="canonical" href="https://www.javierju.com/index.html" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet" />
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Critical CSS (Above-the-fold styles) -->
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+  <noscript>
+    <link rel="stylesheet" href="css/style.css">
+  </noscript>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
